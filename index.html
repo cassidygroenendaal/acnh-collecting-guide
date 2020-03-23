@@ -43,7 +43,8 @@
         <!-- Date Input -->
         <span class="main-info__date">
           <input type="date" required id="js-select-date"
-            class="main-info__input" data-date="" data-date-format="MMM D" value="2020-03-23">
+            class="main-info__input" data-date=""
+            data-date-format="MMM D" value="2020-03-23">
           <i class="far fa-calendar main-info__icon"></i>
         </span>
         at
@@ -97,87 +98,115 @@
               <p class="detail__info detail__info--gold">* 10,000</p>
             </div>
           </div>
+        </div>
 
 
-          <div class="card">
-            <div class="card__header">
-              <p class="card__title">Hammerhead shark</p>
-              <p class="card__subtitle">May - June</p>
+        <div class="card">
+          <div class="card__header">
+            <p class="card__title">Hammerhead shark</p>
+            <p class="card__subtitle">May - June</p>
+          </div>
+
+          <div class="card__details">
+            <div class="card__detail">
+              <p class="detail__title detail__title--green">Time of
+                day</p>
+              <p class="detail__info detail__info--green">9AM - 4PM</p>
             </div>
 
-            <div class="card__details">
-              <div class="card__detail">
-                <p class="detail__title detail__title--green">Time of
-                  day</p>
-                <p class="detail__info detail__info--green">9AM - 4PM</p>
-              </div>
-
-              <div class="card__detail">
-                <p class="detail__title detail__title--blue">Location</p>
-                <p class="detail__info detail__info--blue">River</p>
-                <p class="detail__subinfo">Clifftop</p>
-              </div>
-
-              <div class="card__detail">
-                <p class="detail__title detail__title--gold">Selling
-                  Price</p>
-                <p class="detail__info detail__info--gold">* 10,000</p>
-              </div>
+            <div class="card__detail">
+              <p class="detail__title detail__title--blue">Location</p>
+              <p class="detail__info detail__info--blue">River</p>
+              <p class="detail__subinfo">Clifftop</p>
             </div>
 
-
-            <div class="card">
-              <div class="card__header">
-                <p class="card__title">Blowfish</p>
-                <p class="card__subtitle">May - June</p>
-              </div>
-
-              <div class="card__details">
-                <div class="card__detail">
-                  <p class="detail__title detail__title--green">Time
-                    of day</p>
-                  <p class="detail__info detail__info--green">9AM -
-                    4PM</p>
-                </div>
-
-                <div class="card__detail">
-                  <p class="detail__title detail__title--blue">Location</p>
-                  <p class="detail__info detail__info--blue">River</p>
-                  <p class="detail__subinfo">Clifftop</p>
-                </div>
-
-                <div class="card__detail">
-                  <p class="detail__title detail__title--gold">Selling
-                    Price</p>
-                  <p class="detail__info detail__info--gold">* 10,000</p>
-                </div>
-              </div>
-
+            <div class="card__detail">
+              <p class="detail__title detail__title--gold">Selling
+                Price</p>
+              <p class="detail__info detail__info--gold">* 10,000</p>
             </div>
-
           </div>
         </div>
 
-        <div id="modal-location">
-          <div id="modal-close">x</div>
-          <p>Select your hemisphere</p>
-          <!-- radio buttons -->
-          <ul>
-            <li>Northern</li>
-            <li>Southern</li>
-          </ul>
-          <p>Select island locations</p>
-          <!-- radio buttons -->
-          <ul>
-            <li>All</li>
-            <li>Ocean</li>
-            <li>River</li>
-          </ul>
+
+        <div class="card">
+          <div class="card__header">
+            <p class="card__title">Blowfish</p>
+            <p class="card__subtitle">May - June</p>
+          </div>
+
+          <div class="card__details">
+            <div class="card__detail">
+              <p class="detail__title detail__title--green">Time
+                of day</p>
+              <p class="detail__info detail__info--green">9AM -
+                4PM</p>
+            </div>
+
+            <div class="card__detail">
+              <p class="detail__title detail__title--blue">Location</p>
+              <p class="detail__info detail__info--blue">River</p>
+              <p class="detail__subinfo">Clifftop</p>
+            </div>
+
+            <div class="card__detail">
+              <p class="detail__title detail__title--gold">Selling
+                Price</p>
+              <p class="detail__info detail__info--gold">* 10,000</p>
+            </div>
+          </div>
+
         </div>
 
+      </div>
 
-        <script src="./assets/js/fish.js"></script>
-        <script src="./assets/js/bugs.js"></script>
-        <script src="./assets/js/script.js"></script>
-      </body>
-    </html>
+    </div> <!-- /container  -->
+
+    <!-- Modal -->
+    <div class="modal modal--hidden js-close-modal">
+      <div class="modal__content modal__content--hidden">
+
+        <div class="modal__close-btn-container">
+          <button class="modal__close-btn js-close-modal"><i
+              class="fas
+              fa-times"></i></button>
+        </div>
+
+        <div class="modal__option-group">
+          <p class="modal__option-title">Select your hemisphere</p>
+          <input checked type="radio" name="hemisphere"
+            id="hemi-north"
+            value="northern" class="modal__radio-btn">
+          <label for="hemi-north"
+            class="modal__radio-btn-label">North</label>
+          <input type="radio" name="hemisphere" id="hemi-south"
+            value="southern" class="modal__radio-btn">
+          <label for="hemi-south"
+            class="modal__radio-btn-label">South</label>
+        </div>
+
+        <div id="js-locations" class="modal__option-group">
+          <p class="modal__option-title">Select island locations</p>
+          <input checked type="radio" name="location"
+            id="loc-all"
+            value="all" class="modal__radio-btn">
+          <label for="loc-all" class="modal__radio-btn-label">All</label>
+          <input type="radio" name="location" id="loc-ocean"
+            value="Ocean" class="modal__radio-btn">
+          <label for="loc-ocean" class="modal__radio-btn-label">Ocean</label>
+          <input type="radio" name="location" id="loc-river"
+            value="River" class="modal__radio-btn">
+          <label for="loc-river" class="modal__radio-btn-label">River</label>
+          <input type="radio" name="location" id="loc-pond"
+            value="Pond" class="modal__radio-btn">
+          <label for="loc-pond" class="modal__radio-btn-label">Pond</label>
+        </div>
+
+      </div>
+    </div> <!-- /modal -->
+
+    <script src="./assets/js/fish.js"></script>
+    <script src="./assets/js/bugs.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
