@@ -7,13 +7,127 @@
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,600,700|Zilla+Slab:400,500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <hi>ACNH</hi>
+    <header>
+      <img src="./assets/images/acnh_logo.png" alt="Animal Crossing: New Horizons logo">
+    </header>
 
-    <script src="./assets/js/fish.js"></script>
-    <script src="./assets/js/bugs.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
-</html>
+    <p class="main-info">
+      What fish can I catch on March 22 at 10:00 AM?
+    </p>
+
+    <div id="results-details">
+      <p>
+        Showing <span id="num-results">10</span> results for Northern hemisphere, All
+        Locations Edit
+      </p>
+    </div>
+
+    <div id="display-results">
+
+      <div class="card">
+        <div class="card__header">
+          <p class="card__title">Angelfish</p>
+          <p class="card__subtitle">May - June</p>
+        </div>
+
+        <div class="card__details">
+          <div class="card__detail">
+            <p class="detail__title detail__title--green">Time of day</p>
+            <p class="detail__info detail__info--green">9AM - 4PM</p>
+          </div>
+
+          <div class="card__detail">
+            <p class="detail__title detail__title--blue">Location</p>
+            <p class="detail__info detail__info--blue">River</p>
+            <p class="detail__subinfo">Clifftop</p>
+          </div>
+
+          <div class="card__detail">
+            <p class="detail__title detail__title--gold">Selling Price</p>
+            <p class="detail__info detail__info--gold">* 10,000</p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card__header">
+            <p class="card__title">Hammerhead shark</p>
+            <p class="card__subtitle">May - June</p>
+          </div>
+
+          <div class="card__details">
+            <div class="card__detail">
+              <p class="detail__title detail__title--green">Time of day</p>
+              <p class="detail__info detail__info--green">9AM - 4PM</p>
+            </div>
+
+            <div class="card__detail">
+              <p class="detail__title detail__title--blue">Location</p>
+              <p class="detail__info detail__info--blue">River</p>
+              <p class="detail__subinfo">Clifftop</p>
+            </div>
+
+            <div class="card__detail">
+              <p class="detail__title detail__title--gold">Selling Price</p>
+              <p class="detail__info detail__info--gold">* 10,000</p>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card__header">
+              <p class="card__title">Blowfish</p>
+              <p class="card__subtitle">May - June</p>
+            </div>
+
+            <div class="card__details">
+              <div class="card__detail">
+                <p class="detail__title detail__title--green">Time of day</p>
+                <p class="detail__info detail__info--green">9AM - 4PM</p>
+              </div>
+
+              <div class="card__detail">
+                <p class="detail__title detail__title--blue">Location</p>
+                <p class="detail__info detail__info--blue">River</p>
+                <p class="detail__subinfo">Clifftop</p>
+              </div>
+
+              <div class="card__detail">
+                <p class="detail__title detail__title--gold">Selling Price</p>
+                <p class="detail__info detail__info--gold">* 10,000</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="modal-location">
+          <div id="modal-close">x</div>
+          <p>Select your hemisphere</p>
+          <!-- radio buttons -->
+          <ul>
+            <li>Northern</li>
+            <li>Southern</li>
+          </ul>
+          <p>Select island locations</p>
+          <!-- radio buttons -->
+          <ul>
+            <li>All</li>
+            <li>Ocean</li>
+            <li>River</li>
+          </ul>
+        </div>
+
+        <script src="./assets/js/fish.js"></script>
+        <script src="./assets/js/bugs.js"></script>
+        <script src="./assets/js/script.js"></script>
+      </body>
+    </html>
