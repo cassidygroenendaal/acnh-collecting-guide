@@ -1,7 +1,74 @@
-.main-info {
-  font-family: 'Zilla Slab', serif;
+body {
+  color: #55341e;
+  background-color: #f8f8f0;
+  background-image: url("../images/leaf-print.png");
 }
 
-.results-details {
-  font-family: 'Libre Franklin', sans-serif;
+.container {
+  padding: 1em;
 }
+
+.logo {
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Main Info */
+.main-info {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  font-size: 2.333em;
+  line-height: 2;
+  margin-bottom: 0.8em;
+}
+
+.main-info__select::after {
+
+}
+
+.main-info__select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #55341e;
+
+  background: #daecdf;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.1em 0.2em;
+}
+
+/* Results Overview */
+.results-overview {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 1.666em;
+  line-height: 1.3;
+  margin-bottom: 0.7em;
+}
+
+.results-overview--bold {
+  font-weight: 700;
+}
+
+.btn-modal-show {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  color: #5fb18a;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.btn-modal-show:hover,
+.btn-modal-show:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Results */

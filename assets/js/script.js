@@ -51,19 +51,23 @@ const buildMonthDisplay = months => {
 };
 
 const init = () => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-      userHemisphere = position.coords.latitude >= 0 ? 'northern' : 'southern';
-      //run program
-      listFish.forEach(fish => {
-        console.log(
-          fish.name,
-          userHemisphere + ':',
-          buildMonthDisplay(fish.months[userHemisphere])
-        );
-      });
-    });
-  }
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(position => {
+  //     userHemisphere = position.coords.latitude >= 0 ? 'northern' : 'southern';
+  //run program
+  $('#js-select-species').on('change', function() {
+    getAnimals($(this).val());
+  });
+  
+  // listFish.forEach(fish => {
+  //   console.log(
+  //     fish.name,
+  //     userHemisphere + ':',
+  //     buildMonthDisplay(fish.months[userHemisphere])
+  //   );
+  // });
+  //   });
+  // }
 };
 
 //==========================================================================

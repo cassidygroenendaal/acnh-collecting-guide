@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AC:NH Collection Guide</title>
+    <script src="https://kit.fontawesome.com/d376955e9a.js"
+      crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
@@ -14,51 +16,48 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <header>
-      <img src="./assets/images/acnh_logo.png" alt="Animal Crossing: New Horizons logo">
-    </header>
 
-    <p class="main-info">
-      What fish can I catch on March 22 at 10:00 AM?
-    </p>
+    <div class="container">
+      <!-- Logo -->
+      <header>
+        <img class="logo" src="./assets/images/acnh_logo.png" alt="Animal Crossing: New
+          Horizons logo">
+      </header>
 
-    <div id="results-details">
-      <p>
-        Showing <span id="num-results">10</span> results for Northern hemisphere, All
-        Locations Edit
+      <!-- Main Info -->
+      <p class="main-info">
+        What
+        <span class="main-info__select">
+          <select id="js-select-species">
+            <option selected value="fish">fish</option>
+            <option value="bugs">bugs</option>
+          </select>
+
+        </span>
+        can I catch on
+        <input type="date" id="js-select-date" class="main-info__input"> at
+        <input type="time" id="js-select-time"
+          class="main-info__input">?
       </p>
-    </div>
 
-    <div id="display-results">
+      <!-- Results Overview -->
+      <div class="results-overview">
+        <p>
+          Showing <span id="js-results-num" class="results-overview--bold">10</span>
+          results
+          for <span class="results-overview--bold"><span id="js-results--hemisphere">Northern</span>
+            hemisphere, <span id="js-results-location">All
+              Locations</span></span>
+        </p>
+        <button class="btn-modal-show">Edit</button>
+      </div>
 
-      <div class="card">
-        <div class="card__header">
-          <p class="card__title">Angelfish</p>
-          <p class="card__subtitle">May - June</p>
-        </div>
-
-        <div class="card__details">
-          <div class="card__detail">
-            <p class="detail__title detail__title--green">Time of day</p>
-            <p class="detail__info detail__info--green">9AM - 4PM</p>
-          </div>
-
-          <div class="card__detail">
-            <p class="detail__title detail__title--blue">Location</p>
-            <p class="detail__info detail__info--blue">River</p>
-            <p class="detail__subinfo">Clifftop</p>
-          </div>
-
-          <div class="card__detail">
-            <p class="detail__title detail__title--gold">Selling Price</p>
-            <p class="detail__info detail__info--gold">* 10,000</p>
-          </div>
-        </div>
-
+      <!-- Results -->
+      <div id="display-results">
 
         <div class="card">
           <div class="card__header">
-            <p class="card__title">Hammerhead shark</p>
+            <p class="card__title">Angelfish</p>
             <p class="card__subtitle">May - June</p>
           </div>
 
@@ -83,7 +82,7 @@
 
           <div class="card">
             <div class="card__header">
-              <p class="card__title">Blowfish</p>
+              <p class="card__title">Hammerhead shark</p>
               <p class="card__subtitle">May - June</p>
             </div>
 
@@ -105,8 +104,34 @@
               </div>
             </div>
 
-          </div>
 
+            <div class="card">
+              <div class="card__header">
+                <p class="card__title">Blowfish</p>
+                <p class="card__subtitle">May - June</p>
+              </div>
+
+              <div class="card__details">
+                <div class="card__detail">
+                  <p class="detail__title detail__title--green">Time of day</p>
+                  <p class="detail__info detail__info--green">9AM - 4PM</p>
+                </div>
+
+                <div class="card__detail">
+                  <p class="detail__title detail__title--blue">Location</p>
+                  <p class="detail__info detail__info--blue">River</p>
+                  <p class="detail__subinfo">Clifftop</p>
+                </div>
+
+                <div class="card__detail">
+                  <p class="detail__title detail__title--gold">Selling Price</p>
+                  <p class="detail__info detail__info--gold">* 10,000</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
         <div id="modal-location">
@@ -125,6 +150,7 @@
             <li>River</li>
           </ul>
         </div>
+
 
         <script src="./assets/js/fish.js"></script>
         <script src="./assets/js/bugs.js"></script>
