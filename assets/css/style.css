@@ -13,7 +13,7 @@ body {
 	margin: 1.5em auto;
 }
 
-/* Main Info */
+/* ----------------- Main Info ----------------- */
 .main-info {
 	font-family: 'Zilla Slab', serif;
 	font-weight: 400;
@@ -22,11 +22,21 @@ body {
 	margin-bottom: 0.8em;
 }
 
-.main-info__select {
+/* Animal Select */
+select::-ms-expand {
+	display: none;
+}
+
+/* All Selects/Inputs */
+.main-info__select,
+.main-info__date,
+.main-info__time {
 	position: relative;
 }
 
-.main-info__select select {
+.main-info__select select,
+.main-info__date input,
+.main-info__time input {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -39,19 +49,52 @@ body {
 	background: #daecdf;
 	border: none;
 	border-radius: 0.2em;
-  padding: 0.1em 0.2em;
-  padding-right: 1em;
+	padding: 0.1em 0.4em;
+	padding-right: 1.3em;
 	outline: none;
 }
 
-.main-info__select-icon {
+.main-info__icon {
 	position: absolute;
-  top: 50%;
-  right: 0.5em;
+	top: 50%;
+	right: 0.9em;
 	transform: translateY(-50%);
+	font-size: 0.6em;
+	color: #5fb18a;
+	pointer-events: none;
 }
 
-/* Results Overview */
+/* Date Select */
+.main-info__date input {
+	position: relative;
+	height: 1.3em;
+	width: 3em;
+	top: 0.4em;
+}
+
+.main-info__date input::-webkit-datetime-edit,
+.main-info__date input::-webkit-inner-spin-button,
+.main-info__date input::-webkit-clear-button {
+	display: none;
+}
+
+.main-info__date input::-webkit-calendar-picker-indicator {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	opacity: 0;
+}
+
+.main-info__date input::before {
+	position: absolute;
+	content: attr(data-date);
+	color: #55341e;
+}
+
+/* Time Select */
+
+/* ----------------- Results Overview ----------------- */
 .results-overview {
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 400;
@@ -80,4 +123,4 @@ body {
 	cursor: pointer;
 }
 
-/* Results */
+/* ----------------- Results ----------------- */

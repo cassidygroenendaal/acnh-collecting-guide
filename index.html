@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/d376955e9a.js"
       crossorigin="anonymous"></script>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     <link
@@ -29,18 +31,28 @@
       <!-- Main Info -->
       <p class="main-info">
         What
+        <!-- Animal Input -->
         <span class="main-info__select">
           <select id="js-select-species">
-            <option selected value="fish">fish</option>
-            <option value="bugs">bugs</option>
+            <option value="fish">fish</option>
+            <option selected value="bugs">bugs</option>
           </select>
-          <i class="fas fa-chevron-down main-info__select-icon"></i>
+          <i class="fas fa-chevron-down main-info__icon"></i>
         </span>
         can I catch on
-        <input type="date" id="js-select-date"
-          class="main-info__input"> at
-        <input type="time" id="js-select-time"
-          class="main-info__input">?
+        <!-- Date Input -->
+        <span class="main-info__date">
+          <input type="date" id="js-select-date"
+            class="main-info__input" data-date="" data-date-format="MMM D" value="2020-03-23">
+          <i class="far fa-calendar main-info__icon"></i>
+        </span>
+        at
+        <!-- Time Input -->
+        <span class="main-info__time">
+          <input type="time" id="js-select-time"
+            class="main-info__input">
+          <!-- <i class="far fa-clock main-info__icon"></i> -->
+        </span>?
       </p>
 
       <!-- Results Overview -->
