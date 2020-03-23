@@ -5,7 +5,9 @@
 let userHemisphere = 'northern',
 	todayDateTime = moment(),
 	userDate = todayDateTime.format('MMM D'),
-	userTime = todayDateTime.format('h:mm A');
+	userTime = todayDateTime.format('HH:mm'),
+	selectedMonth = todayDateTime.format('MMMM').toLowerCase(),
+	selectedHour = todayDateTime.format('H');
 
 //==========================================================================
 // Functions
@@ -58,12 +60,11 @@ const init = () => {
 	//   navigator.geolocation.getCurrentPosition(position => {
 	//     userHemisphere = position.coords.latitude >= 0 ? 'northern' : 'southern';
 	//run program
-	// console.log('Current Date:', userDate);
-	// console.log('Current Time:', userTime);
 
 	// Set today's date & time
 	$('#js-select-date').attr('data-date', userDate);
 	$('#js-select-date').val(todayDateTime.format('YYYY-MM-D'));
+	$('#js-select-time').val(userTime);
 
 	// Set up event listeners
 	$('#js-select-species').on('change', function() {
@@ -76,6 +77,13 @@ const init = () => {
 			'data-date',
 			moment($('#js-select-date').val(), 'YYYY-MM-D').format('MMM D')
 		);
+		selectedMonth = moment($('#js-select-date').val(), 'YYYY-MM-D')
+			.format('MMMM')
+			.toLowerCase();
+	});
+
+	$('#js-select-time').on('change', function() {
+		selectedHour = [$(this).val()[0],$(this).val()[1]].join("");
 	});
 	// listFish.forEach(fish => {
 	//   console.log(
