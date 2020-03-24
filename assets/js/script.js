@@ -24,8 +24,8 @@ String.prototype.toTitleCase = function() {
 };
 
 Number.prototype.addCommas = function() {
-  return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+	return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
 
 const buildMonthDisplay = (months) => {
 	if (months.length === 12) {
@@ -93,6 +93,7 @@ const init = () => {
 		selectedMonth = moment($('#js-select-date').val(), 'YYYY-MM-D')
 			.format('MMMM')
 			.toLowerCase();
+		getAnimals(selectedAnimal);
 	});
 
 	$('#js-select-time').change(function() {
@@ -100,6 +101,7 @@ const init = () => {
 			$(this).val()[0],
 			$(this).val()[1]
 		].join('');
+		getAnimals(selectedAnimal);
 	});
 
 	// Set up Radio Button listeners
@@ -109,6 +111,7 @@ const init = () => {
 		} else {
 			selectedLocation = $(this).attr('value');
 		}
+		getAnimals(selectedAnimal);
 	});
 
 	// Set up Modal
@@ -140,13 +143,53 @@ const init = () => {
 
 const getAnimals = (animal) => {
 	if (animal === 'fish') {
-		renderAnimals(listFish);
+		let listMonthFish = [];
+
+		listFish.forEach((fish) => {
+			fish.months[selectedHemisphere].forEach((month) => {
+				if (month.name === selectedMonth) {
+					listMonthFish.push(fish);
+				}
+			});
+		});
+
+		let listTimeFish = listMonthFish.filter((fish) => {
+			if (fish.startTime === fish.endTime) {
+				return true;
+			} else if (fish.startTime > fish.endTime) {
+				if (
+					fish.startTime <= selectedHour &&
+					fish.endTime + 24 > selectedHour
+				) {
+					return true;
+				}
+			} else {
+				if (
+					fish.startTime <= selectedHour &&
+					fish.endTime > selectedHour
+				) {
+					return true;
+				}
+			}
+		});
+
+		let listSelectedFish;
+
+		if (selectedLocation === 'all') {
+			listSelectedFish = listTimeFish;
+		} else {
+			listSelectedFish = listTimeFish.filter(
+				(fish) => fish.location.name === selectedLocation
+			);
+		}
+
+		return renderAnimals(listSelectedFish);
 	}
 };
 
 const renderAnimals = (listAnimals) => {
+	$('#js-display-results').empty();
 	listAnimals.forEach((animal) => {
-
 		let newCard = $('<div class="card">');
 
 		// Build Card Header
