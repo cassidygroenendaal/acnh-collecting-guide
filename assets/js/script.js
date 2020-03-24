@@ -23,6 +23,10 @@ String.prototype.toTitleCase = function() {
 	});
 };
 
+Number.prototype.addCommas = function() {
+  return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 const buildMonthDisplay = (months) => {
 	if (months.length === 12) {
 		return 'All Year';
@@ -33,7 +37,10 @@ const buildMonthDisplay = (months) => {
 		months.forEach((month, i) => {
 			if (!prevMonth.position) {
 				// Insert first month
-				displayString += `${month.shortName.toTitleCase()} - `;
+				displayString += `${month.shortName.toTitleCase()}${months.length ===
+				1
+					? ''
+					: ' - '}`;
 			} else if (months[i + 1] === undefined) {
 				// Check if current month is the last month in the list
 				if (month.position !== prevMonth.position + 1) {
@@ -73,10 +80,9 @@ const init = () => {
 	// Hide Modal on page load
 	$('.modal').css('visibility', 'hidden');
 
-	// Set up event listeners
+	// Set up event listeners - UNFINISHED
 	$('#js-select-species').change(function() {
-		// getAnimals($(this).val());
-		console.log($(this).val());
+		console.log('This feature has not yet been implemented!');
 	});
 
 	$('#js-select-date').change(function() {
@@ -126,15 +132,144 @@ const init = () => {
 		e.stopPropagation();
 	});
 
-	// listFish.forEach(fish => {
-	//   console.log(
-	//     fish.name,
-	//     userHemisphere + ':',
-	//     buildMonthDisplay(fish.months[userHemisphere])
-	//   );
-	// });
+	getAnimals(selectedAnimal);
+
 	//   });
 	// }
+};
+
+const getAnimals = (animal) => {
+	if (animal === 'fish') {
+		renderAnimals(listFish);
+	}
+};
+
+const renderAnimals = (listAnimals) => {
+	listAnimals.forEach((animal) => {
+
+		let newCard = $('<div class="card">');
+
+		// Build Card Header
+		let newHeader = $('<div class="card__header">'),
+			newTitle = $('<p class="card__title">'),
+			newSubtitle = $('<p class="card__subtitle">');
+
+		newTitle.text(animal.name);
+		newSubtitle.text(
+			buildMonthDisplay(animal.months[selectedHemisphere])
+		);
+		newHeader.append(newTitle);
+		newHeader.append(newSubtitle);
+
+		// Build Card Details
+		let newDetails = $('<div class="card__details">'),
+			newTimeDetail = $('<div class="card__detail">'),
+			newLocationDetail = $('<div class="card__detail">'),
+			newSellPriceDetail = $('<div class="card__detail">');
+
+		// Build Time Detail
+		let newTimeTitle = $(
+				'<p class="detail__title detail__title--green">Time of day</p>'
+			),
+			newTimeInfo = $('<p class="detail__info detail__info--green">');
+		let startTime, endTime;
+		if (animal.startTimes) {
+			if (animal.startTimes[0] > 12) {
+				startTime = animal.startTimes[0] - 12 + 'PM';
+			} else {
+				startTime = animal.startTimes[0] + 'AM';
+			}
+			if (animal.endTimes[0] > 12) {
+				endTime = animal.endTimes[0] - 12 + 'PM';
+			} else {
+				endTime = animal.endTimes[0] + 'AM';
+			}
+			newTimeInfo.text(`${startTime} - ${endTime}`);
+		} else {
+			if (animal.startTime === animal.endTime) {
+				newTimeInfo.text('All day');
+			} else {
+				if (animal.startTime > 12) {
+					startTime = animal.startTime - 12 + 'PM';
+				} else {
+					startTime = animal.startTime + 'AM';
+				}
+				if (animal.endTime > 12) {
+					endTime = animal.endTime - 12 + 'PM';
+				} else {
+					endTime = animal.endTime + 'AM';
+				}
+				newTimeInfo.text(`${startTime} - ${endTime}`);
+			}
+		}
+
+		newTimeDetail.append(newTimeTitle, newTimeInfo);
+
+		// Build Location Detail
+		let newLocationTitle = $(
+				'<p class="detail__title detail__title--blue">Location</p>'
+			),
+			newLocationContainer,
+			newLocationSubinfo,
+			newLocationInfo = $(
+				'<p class="detail__info detail__info--blue">'
+			);
+
+		newLocationInfo.text(animal.location.name);
+
+		if (animal.location.sublocation) {
+			newLocationContainer = $(
+				'<div class="detail__info-container">'
+			);
+			newLocationSubinfo = $('<p class="detail__subinfo">');
+			newLocationSubinfo.text(animal.location.sublocation);
+
+			newLocationContainer.append(
+				newLocationInfo,
+				newLocationSubinfo
+			);
+
+			newLocationDetail.append(
+				newLocationTitle,
+				newLocationContainer
+			);
+		} else {
+			newLocationDetail.append(newLocationTitle, newLocationInfo);
+		}
+
+		// Build SellPrice Detail
+		let newSellPriceTitle = $(
+				'<p class="detail__title detail__title--gold">Selling Price</p>'
+			),
+			newSellPriceContainer = $(
+				'<div class="detail__info detail__info--gold detail__info--container">'
+			);
+
+		if (!animal.sellPrice) {
+			newSellPriceContainer.html(
+				'<i class="fas fa-star"></i><p>-</p>'
+			);
+		} else {
+			newSellPriceContainer.html(
+				`<i class="fas fa-star"></i><p>${animal.sellPrice.addCommas()}</p>`
+			);
+		}
+
+		newSellPriceDetail.append(
+			newSellPriceTitle,
+			newSellPriceContainer
+		);
+
+		newDetails.append(
+			newTimeDetail,
+			newLocationDetail,
+			newSellPriceDetail
+		);
+
+		newCard.append(newHeader, newDetails);
+
+		$('#js-display-results').append(newCard);
+	});
 };
 
 //==========================================================================

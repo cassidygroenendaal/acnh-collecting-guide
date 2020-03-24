@@ -389,7 +389,7 @@ const listFish = [
       ]
     },
     location  : {
-      name        : 'River',
+      name        : 'Pond',
       sublocation : null
     },
     startTime : 5,

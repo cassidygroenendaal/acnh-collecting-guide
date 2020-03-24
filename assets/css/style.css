@@ -21,7 +21,7 @@ body {
 .main-info {
 	font-family: 'Zilla Slab', serif;
 	font-weight: 400;
-	font-size: 2.333em;
+	font-size: 2em;
 	line-height: 2;
 	margin-bottom: 0.8em;
 }
@@ -59,7 +59,7 @@ select::-ms-expand {
 	background: #daecdf;
 	border: none;
 	border-radius: 0.2em;
-	padding: 0.1em 0.4em;
+	padding: 0.3em 0.4em;
 	padding-right: 1.3em;
 	cursor: pointer;
 	outline: none;
@@ -78,9 +78,9 @@ select::-ms-expand {
 /* Date Select */
 .main-info__date input {
 	position: relative;
-	height: 1.3em;
+	height: 1.7em;
 	width: 4.6em;
-	top: 0.3em;
+	top: 0.5em;
 }
 
 .main-info__date input::-webkit-datetime-edit,
@@ -109,11 +109,15 @@ select::-ms-expand {
 	display: none;
 }
 
+.main-info__time .main-info__icon {
+	font-size: 0.7em;
+}
+
 /* ----------------- Results Overview ----------------- */
 .results-overview {
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 1.3;
 	margin-bottom: 0.7em;
 }
@@ -153,21 +157,21 @@ select::-ms-expand {
 
 .card__header {
 	border-bottom: 0.1em solid rgba(232, 232, 232, 1);
-	padding-bottom: 1em;
-	margin-bottom: 1em;
+	padding-bottom: 1.4em;
+	margin-bottom: 1.4em;
 }
 
 .card__title {
 	font-family: 'Zilla Slab', serif;
 	font-weight: 500;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	line-height: 1.2;
 	margin-bottom: 0.3em;
 }
 
 .card__subtitle {
 	font-weight: 300;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .card__detail {
