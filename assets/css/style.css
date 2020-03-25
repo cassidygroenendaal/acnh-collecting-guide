@@ -342,10 +342,11 @@ select::-ms-expand {
 	.card__detail {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 
 	.detail__title {
-		margin-bottom: 1em;
+		margin-bottom: 0.8em;
 	}
 
 	.detail__subinfo {
@@ -378,10 +379,13 @@ select::-ms-expand {
 	.card {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.card__header {
 		border: none;
+		padding-bottom: 0.5em;
+		margin: 0;
 	}
 
 	.card__details {
