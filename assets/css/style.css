@@ -17,6 +17,9 @@ body {
 	margin: 1.5em auto;
 }
 
+.hidden {
+	display: none;
+}
 /* ----------------- Main Info ----------------- */
 .main-info {
 	font-family: 'Zilla Slab', serif;

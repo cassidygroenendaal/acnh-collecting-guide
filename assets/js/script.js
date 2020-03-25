@@ -80,9 +80,10 @@ const init = () => {
 	// Hide Modal on page load
 	$('.modal').css('visibility', 'hidden');
 
-	// Set up event listeners - UNFINISHED
+	// Set up event listeners
 	$('#js-select-species').change(function() {
-		console.log('This feature has not yet been implemented!');
+		selectedAnimal = $(this).val();
+		getAnimals($(this).val());
 	});
 
 	$('#js-select-date').change(function() {
@@ -142,48 +143,62 @@ const init = () => {
 };
 
 const getAnimals = (animal) => {
-	if (animal === 'fish') {
-		let listMonthFish = [];
+	let listMonthAnimals = [];
 
+	// Compile a list of animals for the current month
+	if (animal === 'fish') {
 		listFish.forEach((fish) => {
 			fish.months[selectedHemisphere].forEach((month) => {
 				if (month.name === selectedMonth) {
-					listMonthFish.push(fish);
+					listMonthAnimals.push(fish);
 				}
 			});
 		});
-
-		let listTimeFish = listMonthFish.filter((fish) => {
-			if (fish.startTime === fish.endTime) {
-				return true;
-			} else if (fish.startTime > fish.endTime) {
-				if (
-					fish.startTime <= selectedHour &&
-					fish.endTime + 24 > selectedHour
-				) {
-					return true;
+	} else {
+		listBugs.forEach((bug) => {
+			bug.months[selectedHemisphere].forEach((month) => {
+				if (month.name === selectedMonth) {
+					listMonthAnimals.push(bug);
 				}
-			} else {
-				if (
-					fish.startTime <= selectedHour &&
-					fish.endTime > selectedHour
-				) {
-					return true;
-				}
-			}
+			});
 		});
+	}
 
+	let listTimeAnimals = listMonthAnimals.filter((animal) => {
+		if (animal.startTime === animal.endTime) {
+			return true;
+		} else if (animal.startTime > animal.endTime) {
+			if (
+				animal.startTime <= selectedHour &&
+				animal.endTime + 24 > selectedHour
+			) {
+				return true;
+			}
+		} else {
+			if (
+				animal.startTime <= selectedHour &&
+				animal.endTime > selectedHour
+			) {
+				return true;
+			}
+		}
+	});
+
+	if (selectedAnimal === 'fish') {
 		let listSelectedFish;
 
 		if (selectedLocation === 'all') {
-			listSelectedFish = listTimeFish;
+			listSelectedFish = listTimeAnimals;
 		} else {
-			listSelectedFish = listTimeFish.filter(
+			listSelectedFish = listTimeAnimals.filter(
 				(fish) => fish.location.name === selectedLocation
 			);
 		}
-
-		return renderAnimals(listSelectedFish);
+		updateResultsOverview(listSelectedFish.length);
+		renderAnimals(listSelectedFish);
+	} else {
+		updateResultsOverview(listTimeAnimals.length);
+		renderAnimals(listTimeAnimals);
 	}
 };
 
@@ -313,6 +328,21 @@ const renderAnimals = (listAnimals) => {
 
 		$('#js-display-results').append(newCard);
 	});
+};
+
+const updateResultsOverview = (numResults) => {
+	$('#js-results-num').text(numResults);
+	$('#js-results-hemisphere').text(selectedHemisphere.toTitleCase());
+	if (selectedAnimal === 'fish') {
+		$('#js-results-fish').removeClass('hidden');
+		if (selectedLocation === 'all') {
+			$('#js-results-location').text('All Locations');
+		} else {
+			$('#js-results-location').text(selectedLocation);
+		}
+	} else {
+		$('#js-results-fish').addClass('hidden');
+	}
 };
 
 //==========================================================================
