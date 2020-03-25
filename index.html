@@ -64,7 +64,7 @@
           results
           for <span class="results-overview--bold"><span
               id="js-results-hemisphere"></span>
-            hemisphere<span id="js-results-fish">, <span id="js-results-location"></span></span></span>
+            hemisphere, <span id="js-results-location"></span></span>
         </p>
         <button class="btn-modal-show">Edit</button>
       </div>
@@ -193,21 +193,48 @@
             class="modal__radio-btn-label">South</label>
         </div>
 
-        <div id="js-locations" class="modal__option-group">
+        <!-- Fish Locations -->
+        <div id="js-locations-fish" class="modal__option-group">
           <p class="modal__option-title">Select island locations</p>
-          <input checked type="radio" name="location"
-            id="loc-all"
-            value="all" class="modal__radio-btn">
-          <label for="loc-all" class="modal__radio-btn-label">All</label>
-          <input type="radio" name="location" id="loc-ocean"
+          <input checked type="radio" name="loc-fish"
+            id="loc-all-fish" value="all" class="modal__radio-btn">
+          <label for="loc-all-fish" class="modal__radio-btn-label">All</label>
+          <input type="radio" name="loc-fish" id="loc-ocean"
             value="Ocean" class="modal__radio-btn">
           <label for="loc-ocean" class="modal__radio-btn-label">Ocean</label>
-          <input type="radio" name="location" id="loc-river"
+          <input type="radio" name="loc-fish" id="loc-river"
             value="River" class="modal__radio-btn">
           <label for="loc-river" class="modal__radio-btn-label">River</label>
-          <input type="radio" name="location" id="loc-pond"
+          <input type="radio" name="loc-fish" id="loc-pond"
             value="Pond" class="modal__radio-btn">
           <label for="loc-pond" class="modal__radio-btn-label">Pond</label>
+        </div>
+
+        <!-- Bug Locations -->
+        <div id="js-locations-bugs" class="modal__option-group
+          hidden">
+          <p class="modal__option-title">Select island locations</p>
+          <input checked type="radio" name="loc-bugs"
+            id="loc-all-bugs" value="all" class="modal__radio-btn">
+          <label for="loc-all-bugs" class="modal__radio-btn-label">All</label>
+          <input type="radio" name="loc-bugs" id="loc-flying"
+            value="Flying" class="modal__radio-btn">
+          <label for="loc-flying" class="modal__radio-btn-label">Flying</label>
+          <input type="radio" name="loc-bugs" id="loc-flowers"
+            value="Flowers" class="modal__radio-btn">
+          <label for="loc-flowers" class="modal__radio-btn-label">Flowers</label>
+          <input type="radio" name="loc-bugs" id="loc-ground"
+            value="Ground" class="modal__radio-btn">
+          <label for="loc-ground" class="modal__radio-btn-label">Ground</label>
+          <input type="radio" name="loc-bugs" id="loc-rocks"
+            value="Rocks" class="modal__radio-btn">
+          <label for="loc-rocks" class="modal__radio-btn-label">Rocks</label>
+          <input type="radio" name="loc-bugs" id="loc-trees"
+            value="Trees" class="modal__radio-btn">
+          <label for="loc-trees" class="modal__radio-btn-label">Trees</label>
+          <input type="radio" name="loc-bugs" id="loc-special"
+            value="Special" class="modal__radio-btn">
+          <label for="loc-special" class="modal__radio-btn-label">Special</label>
         </div>
 
       </div>

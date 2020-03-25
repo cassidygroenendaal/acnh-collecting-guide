@@ -11,7 +11,8 @@ let selectedMonth = todayDateTime.format('MMMM').toLowerCase(),
 	selectedHour = todayDateTime.format('H'),
 	selectedAnimal = 'fish',
 	selectedHemisphere = userHemisphere,
-	selectedLocation = 'all';
+	selectedFishLocation = 'all',
+	selectedBugLocation = 'all';
 
 //==========================================================================
 // Functions
@@ -25,6 +26,29 @@ String.prototype.toTitleCase = function() {
 
 Number.prototype.addCommas = function() {
 	return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
+
+const compareTimes = (start, end) => {
+	if (start > end) {
+		// If an animals time overlaps midnight
+		if (selectedHour >= 12) {
+			// If selectedHour is between 12PM and 11PM
+			if (start <= selectedHour && end + 24 > selectedHour) {
+				return true;
+			}
+		} else {
+			// If selectedHour is between 12AM and 11AM
+			if (start - 24 <= selectedHour && end > selectedHour) {
+				return true;
+			}
+		}
+	} else {
+		// If an animals times doesn't overlap midnight
+		if (start <= selectedHour && end > selectedHour) {
+			return true;
+		}
+	}
+	return false;
 };
 
 const buildMonthDisplay = (months) => {
@@ -66,12 +90,32 @@ const buildMonthDisplay = (months) => {
 	}
 };
 
-const init = () => {
-	// if (navigator.geolocation) {
-	//   navigator.geolocation.getCurrentPosition(position => {
-	//     userHemisphere = position.coords.latitude >= 0 ? 'northern' : 'southern';
-	//run program
+const buildTimeDisplay = (start, end) => {
+	let displayString, startString, endString;
+	if (start === end) {
+		displayString = 'All day';
+	} else {
+		if (start > 12) {
+			// If starts after noon
+			startString = start - 12 + 'PM';
+		} else {
+			startString = start + 'AM';
+		}
 
+		if (end > 12) {
+			// If ends after noon
+			endString = end - 12 + 'PM';
+		} else {
+			endString = end + 'AM';
+		}
+
+		displayString = `${startString} - ${endString}`;
+	}
+
+	return displayString;
+};
+
+const init = () => {
 	// Set today's date & time
 	$('#js-select-date').attr('data-date', userDate);
 	$('#js-select-date').val(todayDateTime.format('YYYY-MM-D'));
@@ -83,6 +127,13 @@ const init = () => {
 	// Set up event listeners
 	$('#js-select-species').change(function() {
 		selectedAnimal = $(this).val();
+		if (selectedAnimal === 'fish') {
+			$('#js-locations-fish').removeClass('hidden');
+			$('#js-locations-bugs').addClass('hidden');
+		} else {
+			$('#js-locations-fish').addClass('hidden');
+			$('#js-locations-bugs').removeClass('hidden');
+		}
 		getAnimals($(this).val());
 	});
 
@@ -98,19 +149,23 @@ const init = () => {
 	});
 
 	$('#js-select-time').change(function() {
-		selectedHour = [
-			$(this).val()[0],
-			$(this).val()[1]
-		].join('');
+		selectedHour = parseInt(
+			[
+				$(this).val()[0],
+				$(this).val()[1]
+			].join('')
+		);
 		getAnimals(selectedAnimal);
 	});
 
 	// Set up Radio Button listeners
 	$('.modal__radio-btn').change(function() {
 		if ($(this).attr('name') === 'hemisphere') {
-			selectedHemisphere = $(this).attr('value');
+			selectedHemisphere = $(this).val();
+		} else if ($(this).attr('name') === 'loc-fish') {
+			selectedFishLocation = $(this).val();
 		} else {
-			selectedLocation = $(this).attr('value');
+			selectedBugLocation = $(this).val();
 		}
 		getAnimals(selectedAnimal);
 	});
@@ -137,9 +192,6 @@ const init = () => {
 	});
 
 	getAnimals(selectedAnimal);
-
-	//   });
-	// }
 };
 
 const getAnimals = (animal) => {
@@ -165,40 +217,44 @@ const getAnimals = (animal) => {
 	}
 
 	let listTimeAnimals = listMonthAnimals.filter((animal) => {
-		if (animal.startTime === animal.endTime) {
+		if (animal.startTimes) {
+			return (
+				compareTimes(animal.startTimes[0], animal.endTimes[0]) ||
+				compareTimes(animal.startTimes[1], animal.endTimes[1])
+			);
+		} else if (animal.startTime === animal.endTime) {
+			// If an animal is out all day
 			return true;
-		} else if (animal.startTime > animal.endTime) {
-			if (
-				animal.startTime <= selectedHour &&
-				animal.endTime + 24 > selectedHour
-			) {
-				return true;
-			}
 		} else {
-			if (
-				animal.startTime <= selectedHour &&
-				animal.endTime > selectedHour
-			) {
-				return true;
-			}
+			// If an animal has 1 start and end time
+			return compareTimes(animal.startTime, animal.endTime);
 		}
 	});
 
 	if (selectedAnimal === 'fish') {
 		let listSelectedFish;
 
-		if (selectedLocation === 'all') {
+		if (selectedFishLocation === 'all') {
 			listSelectedFish = listTimeAnimals;
 		} else {
 			listSelectedFish = listTimeAnimals.filter(
-				(fish) => fish.location.name === selectedLocation
+				(fish) => fish.location.name === selectedFishLocation
 			);
 		}
 		updateResultsOverview(listSelectedFish.length);
 		renderAnimals(listSelectedFish);
 	} else {
-		updateResultsOverview(listTimeAnimals.length);
-		renderAnimals(listTimeAnimals);
+		let listSelectedBugs;
+
+		if (selectedBugLocation === 'all') {
+			listSelectedBugs = listTimeAnimals;
+		} else {
+			listSelectedBugs = listTimeAnimals.filter(
+				(bug) => bug.location.name === selectedBugLocation
+			);
+		}
+		updateResultsOverview(listSelectedBugs.length);
+		renderAnimals(listSelectedBugs);
 	}
 };
 
@@ -229,39 +285,37 @@ const renderAnimals = (listAnimals) => {
 		let newTimeTitle = $(
 				'<p class="detail__title detail__title--green">Time of day</p>'
 			),
+			newTimeContainer,
+			newTimeSubinfo,
 			newTimeInfo = $('<p class="detail__info detail__info--green">');
-		let startTime, endTime;
-		if (animal.startTimes) {
-			if (animal.startTimes[0] > 12) {
-				startTime = animal.startTimes[0] - 12 + 'PM';
-			} else {
-				startTime = animal.startTimes[0] + 'AM';
-			}
-			if (animal.endTimes[0] > 12) {
-				endTime = animal.endTimes[0] - 12 + 'PM';
-			} else {
-				endTime = animal.endTimes[0] + 'AM';
-			}
-			newTimeInfo.text(`${startTime} - ${endTime}`);
-		} else {
-			if (animal.startTime === animal.endTime) {
-				newTimeInfo.text('All day');
-			} else {
-				if (animal.startTime > 12) {
-					startTime = animal.startTime - 12 + 'PM';
-				} else {
-					startTime = animal.startTime + 'AM';
-				}
-				if (animal.endTime > 12) {
-					endTime = animal.endTime - 12 + 'PM';
-				} else {
-					endTime = animal.endTime + 'AM';
-				}
-				newTimeInfo.text(`${startTime} - ${endTime}`);
-			}
-		}
 
-		newTimeDetail.append(newTimeTitle, newTimeInfo);
+		if (animal.startTimes) {
+			newTimeContainer = $('<div class="detail__info-container">');
+			newTimeSubinfo = $('<p class="detail__subinfo">');
+			// Check which time is relevant to selectedHour
+			if (compareTimes(animal.startTimes[0], animal.endTimes[0])) {
+				newTimeInfo.text(
+					buildTimeDisplay(animal.startTimes[0], animal.endTimes[0])
+				);
+				newTimeSubinfo.text(
+					buildTimeDisplay(animal.startTimes[1], animal.endTimes[1])
+				);
+			} else {
+				newTimeInfo.text(
+					buildTimeDisplay(animal.startTimes[1], animal.endTimes[1])
+				);
+				newTimeSubinfo.text(
+					buildTimeDisplay(animal.startTimes[0], animal.endTimes[0])
+				);
+			}
+			newTimeContainer.append(newTimeInfo, newTimeSubinfo);
+			newTimeDetail.append(newTimeTitle, newTimeContainer);
+		} else {
+			newTimeInfo.text(
+				buildTimeDisplay(animal.startTime, animal.endTime)
+			);
+			newTimeDetail.append(newTimeTitle, newTimeInfo);
+		}
 
 		// Build Location Detail
 		let newLocationTitle = $(
@@ -334,14 +388,17 @@ const updateResultsOverview = (numResults) => {
 	$('#js-results-num').text(numResults);
 	$('#js-results-hemisphere').text(selectedHemisphere.toTitleCase());
 	if (selectedAnimal === 'fish') {
-		$('#js-results-fish').removeClass('hidden');
-		if (selectedLocation === 'all') {
+		if (selectedFishLocation === 'all') {
 			$('#js-results-location').text('All Locations');
 		} else {
-			$('#js-results-location').text(selectedLocation);
+			$('#js-results-location').text(selectedFishLocation);
 		}
 	} else {
-		$('#js-results-fish').addClass('hidden');
+		if (selectedBugLocation === 'all') {
+			$('#js-results-location').text('All Locations');
+		} else {
+			$('#js-results-location').text(selectedBugLocation);
+		}
 	}
 };
 
@@ -349,4 +406,20 @@ const updateResultsOverview = (numResults) => {
 // Logic
 //--------------------------------------------------------------------------
 
-init();
+if (localStorage.getItem('hemisphere') !== null) {
+	userHemisphere = localStorage.getItem('hemisphere');
+	selectedHemisphere = localStorage.getItem('hemisphere');
+	init();
+} else {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition((position) => {
+			userHemisphere =
+				position.coords.latitude >= 0 ? 'northern' : 'southern';
+			localStorage.setItem(
+				'hemisphere',
+				position.coords.latitude >= 0 ? 'northern' : 'southern'
+			);
+			init();
+		});
+	}
+}
