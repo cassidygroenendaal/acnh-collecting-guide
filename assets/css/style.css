@@ -23,6 +23,7 @@ body {
 	font-weight: 400;
 	font-size: 2em;
 	line-height: 2;
+	text-align: center;
 	margin-bottom: 0.8em;
 }
 
@@ -231,11 +232,11 @@ select::-ms-expand {
 }
 
 .detail__subinfo {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 0.75em;;
-  color: #55341e;
-  margin-top: 0.3em;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.75em;
+	color: #55341e;
+	margin-top: 0.3em;
 }
 
 /* ----------------- Modal ----------------- */
@@ -320,4 +321,35 @@ select::-ms-expand {
 .modal__radio-btn:checked + .modal__radio-btn-label {
 	color: #fffae3;
 	background-color: #5ca4fc;
+}
+
+/* ----------------- Media Queries ----------------- */
+
+@media screen and (min-width: 46em) {
+	.container {
+		width: 44em;
+		margin: 0 auto;
+	}
+
+	.card__details {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1em;
+	}
+
+	.card__detail {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.detail__title {
+		margin-bottom: 1em;
+	}
+
+	.detail__subinfo {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
 }
