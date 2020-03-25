@@ -24,7 +24,9 @@ body {
 	font-size: 2em;
 	line-height: 2;
 	text-align: center;
-	margin-bottom: 0.8em;
+	max-width: 15em;
+	margin: 0 auto;
+	margin-bottom: 0.9em;
 }
 
 /* Animal Select */
@@ -351,5 +353,38 @@ select::-ms-expand {
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	
+}
+
+@media screen and (min-width: 72em) {
+	.container {
+		width: 68em;
+	}
+
+	.main-info {
+		margin-bottom: 0.9em;
+	}
+
+	.results-overview {
+		display: flex;
+		position: relative;
+	}
+
+	.btn-modal-show {
+		margin-left: 0.9em;
+		position: relative;
+		top: 0.06em;
+	}
+
+	.card {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.card__header {
+		border: none;
+	}
+
+	.card__details {
+		width: 35em;
+	}
 }
