@@ -2,14 +2,22 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	color: #55341e;
 	background-color: #f8f8f0;
 	background-image: url("../images/leaf-print.png");
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
 	padding: 1em;
+	flex: 1 0 auto;
 }
 
 .logo {
@@ -339,6 +347,7 @@ footer {
 	-webkit-box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.16);
 	-moz-box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.16);
 	box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.16);
+	flex-shrink: 0;
 }
 
 /* ----------------- Media Queries ----------------- */
