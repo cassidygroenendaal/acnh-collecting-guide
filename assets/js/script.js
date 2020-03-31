@@ -248,11 +248,13 @@ const getAnimals = (animal) => {
 			);
 		}
 		updateResultsOverview(listSelectedBugs.length);
-		renderAnimals(listSelectedBugs.sort((a, b) => {
-			if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
-			if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
-			return 0;
-		}));
+		renderAnimals(
+			listSelectedBugs.sort((a, b) => {
+				if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+				if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+				return 0;
+			})
+		);
 	}
 };
 
@@ -266,7 +268,7 @@ const renderAnimals = (listAnimals) => {
 			newTitle = $('<p class="card__title">'),
 			newSubtitle = $('<p class="card__subtitle">');
 
-		newTitle.text(animal.name);
+		newTitle.text(animal.name.toTitleCase());
 		newSubtitle.text(
 			buildMonthDisplay(animal.months[selectedHemisphere])
 		);

@@ -26,7 +26,7 @@ const listFish = [
 		sellPrice : 900
 	},
 	{
-		name      : 'Pale Chub',
+		name      : 'Pale chub',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -66,7 +66,7 @@ const listFish = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Crucian Carp',
+		name      : 'Crucian carp',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -266,7 +266,7 @@ const listFish = [
 		sellPrice : 1300
 	},
 	{
-		name      : 'Pop-eyed Goldfish',
+		name      : 'Pop-eyed goldfish',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -306,7 +306,7 @@ const listFish = [
 		sellPrice : 1300
 	},
 	{
-		name      : 'Ranchu Goldfish',
+		name      : 'Ranchu goldfish',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -353,7 +353,7 @@ const listFish = [
 				{ name: 'may', shortName: 'may', position: 5 },
 				{ name: 'june', shortName: 'june', position: 6 },
 				{ name: 'july', shortName: 'july', position: 7 },
-				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'august', shortName: 'aug', position: 8 }
 			],
 			southern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -404,11 +404,11 @@ const listFish = [
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
-				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'september', shortName: 'sept', position: 9 }
 			],
 			southern : [
 				{ name: 'february', shortName: 'feb', position: 2 },
-				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'march', shortName: 'mar', position: 3 }
 			]
 		},
 		location  : {
@@ -429,7 +429,7 @@ const listFish = [
 				{ name: 'july', shortName: 'july', position: 7 },
 				{ name: 'august', shortName: 'aug', position: 8 },
 				{ name: 'september', shortName: 'sept', position: 9 },
-				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'october', shortName: 'oct', position: 10 }
 			],
 			southern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -482,7 +482,7 @@ const listFish = [
 				{ name: 'may', shortName: 'may', position: 5 },
 				{ name: 'june', shortName: 'june', position: 6 },
 				{ name: 'july', shortName: 'july', position: 7 },
-				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'august', shortName: 'aug', position: 8 }
 			],
 			southern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -500,7 +500,7 @@ const listFish = [
 		sellPrice : 120
 	},
 	{
-		name      : 'Freshwater Goby',
+		name      : 'Freshwater goby',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -652,7 +652,7 @@ const listFish = [
 		sellPrice : 180
 	},
 	{
-		name      : 'Yellow Perch',
+		name      : 'Yellow perch',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -679,7 +679,7 @@ const listFish = [
 		sellPrice : 300
 	},
 	{
-		name      : 'Black Bass',
+		name      : 'Black bass',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -769,7 +769,7 @@ const listFish = [
 		sellPrice : 1800
 	},
 	{
-		name      : 'Pond Smelt',
+		name      : 'Pond smelt',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -813,7 +813,7 @@ const listFish = [
 		sellPrice : 900
 	},
 	{
-		name      : 'Cherry Salmon',
+		name      : 'Cherry salmon',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -873,7 +873,7 @@ const listFish = [
 		sellPrice : 3800
 	},
 	{
-		name      : 'Golden Trout',
+		name      : 'Golden trout',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -924,4 +924,1415 @@ const listFish = [
 		endTime   : 9,
 		sellPrice : 15000
 	},
+	{
+		name      : 'Salmon',
+		months    : {
+			northern : [
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'march', shortName: 'mar', position: 3 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : 'Mouth'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 700
+	},
+	{
+		name      : 'King salmon',
+		months    : {
+			northern : [
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'march', shortName: 'mar', position: 3 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : 'Mouth'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1800
+	},
+	{
+		name      : 'Mitten crab',
+		months    : {
+			northern : [
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 2000
+	},
+	{
+		name      : 'Guppy',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 9,
+		endTime   : 16,
+		sellPrice : 1300
+	},
+	{
+		name      : 'Nibble fish',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 9,
+		endTime   : 16,
+		sellPrice : 1500
+	},
+	{
+		name      : 'Angelfish',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 3000
+	},
+	{
+		name      : 'Betta',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 9,
+		endTime   : 16,
+		sellPrice : 2500
+	},
+	{
+		name      : 'Neon tetra',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 9,
+		endTime   : 16,
+		sellPrice : 500
+	},
+	{
+		name      : 'Rainbowfish',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 9,
+		endTime   : 16,
+		sellPrice : 800
+	},
+	{
+		name       : 'Piranha',
+		months     : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location   : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTimes : [
+			9,
+			21
+		],
+		endTimes   : [
+			16,
+			4
+		],
+		sellPrice  : 2500
+	},
+	{
+		name      : 'Arowana',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 10000
+	},
+	{
+		name      : 'Dorado',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 21,
+		sellPrice : 15000
+	},
+	{
+		name      : 'Gar',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Pond',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 6000
+	},
+	{
+		name      : 'Arapaima',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 10000
+	},
+	{
+		name      : 'Saddled Bichir',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : null
+		},
+		startTime : 21,
+		endTime   : 4,
+		sellPrice : 4000
+	},
+	{
+		name      : 'Sturgeon',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			]
+		},
+		location  : {
+			name        : 'River',
+			sublocation : 'Mouth'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 10000
+	},
+	{
+		name      : 'Sea butterfly',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1000
+	},
+	{
+		name      : 'Seahorse',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1100
+	},
+	{
+		name      : 'Clownfish',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 650
+	},
+	{
+		name      : 'Surgeonfish',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1000
+	},
+	{
+		name      : 'Butterfly fish',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1000
+	},
+	{
+		name      : 'Napoleonfish',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 21,
+		sellPrice : 10000
+	},
+	{
+		name      : 'Zebra Turkeyfish',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 500
+	},
+	{
+		name      : 'Blowfish',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 21,
+		endTime   : 4,
+		sellPrice : 5000
+	},
+	{
+		name      : 'Puffer fish',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 250
+	},
+	{
+		name      : 'Anchovy',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 21,
+		sellPrice : 200
+	},
+	{
+		name      : 'Horse mackerel',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 150
+	},
+	{
+		name      : 'Barred Knifejaw',
+		months    : {
+			northern : [
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 5000
+	},
+	{
+		name      : 'Sea bass',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 400
+	},
+	{
+		name      : 'Red snapper',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 3000
+	},
+	{
+		name      : 'Dab',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 300
+	},
+	{
+		name      : 'Olive flounder',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 800
+	},
+	{
+		name      : 'Squid',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 500
+	},
+	{
+		name      : 'Moray eel',
+		months    : {
+			northern : [
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 2000
+	},
+	{
+		name      : 'Ribbon eel',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 600
+	},
+	{
+		name      : 'Tuna',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : 'Pier'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 7000
+	},
+	{
+		name      : 'Blue Marlin',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : 'Pier'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 10000
+	},
+	{
+		name      : 'Giant trevally',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : 'Pier'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 4500
+	},
+	{
+		name      : 'Mahi-mahi',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : 'Pier'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 6000
+	},
+	{
+		name      : 'Ocean sunfish',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 21,
+		sellPrice : 4000
+	},
+	{
+		name      : 'Ray',
+		months    : {
+			northern : [
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 21,
+		sellPrice : 3000
+	},
+	{
+		name      : 'Saw shark',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 12000
+	},
+	{
+		name      : 'Hammerhead shark',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 8000
+	},
+	{
+		name      : 'Great White shark',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 15000
+	},
+	{
+		name      : 'Whale shark',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 13000
+	},
+	{
+		name      : 'Suckerfish',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1500
+	},
+	{
+		name      : 'Football Fish',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 16,
+		endTime   : 9,
+		sellPrice : 2500
+	},
+	{
+		name      : 'Oarfish',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 9000
+	},
+	{
+		name      : 'Barreleye',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : null
+		},
+		startTime : 21,
+		endTime   : 4,
+		sellPrice : 15000
+	},
+	{
+		name      : 'Coelacanth',
+		months    : {
+			northern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Ocean',
+			sublocation : 'Rain'
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 15000
+	}
 ];
