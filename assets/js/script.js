@@ -116,7 +116,7 @@ const buildTimeDisplay = (start, end) => {
 };
 
 const init = () => {
-	// Set today's date & time	
+	// Set today's date & time
 	$('#js-select-date').val(userDate.toLowerCase());
 	$('#js-select-time').val(userTime);
 
@@ -137,12 +137,12 @@ const init = () => {
 	});
 
 	$('#js-select-date').change(function() {
-		selectedMonth = $('#js-select-date').val()		
+		selectedMonth = $('#js-select-date').val();
 		getAnimals(selectedAnimal);
 	});
-	
+
 	$('#js-select-time').change(function() {
-		selectedHour = $(this).val()
+		selectedHour = $(this).val();
 		getAnimals(selectedAnimal);
 	});
 
@@ -230,7 +230,13 @@ const getAnimals = (animal) => {
 			);
 		}
 		updateResultsOverview(listSelectedFish.length);
-		renderAnimals(listSelectedFish);
+		renderAnimals(
+			listSelectedFish.sort((a, b) => {
+				if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+				if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+				return 0;
+			})
+		);
 	} else {
 		let listSelectedBugs;
 
@@ -242,7 +248,11 @@ const getAnimals = (animal) => {
 			);
 		}
 		updateResultsOverview(listSelectedBugs.length);
-		renderAnimals(listSelectedBugs);
+		renderAnimals(listSelectedBugs.sort((a, b) => {
+			if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+			if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+			return 0;
+		}));
 	}
 };
 
