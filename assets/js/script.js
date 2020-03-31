@@ -4,10 +4,10 @@
 
 let userHemisphere = 'northern',
 	todayDateTime = moment(),
-	userDate = todayDateTime.format('MMM D'),
-	userTime = todayDateTime.format('HH:mm');
+	userDate = todayDateTime.format('MMM'),
+	userTime = todayDateTime.format('H');
 
-let selectedMonth = todayDateTime.format('MMMM').toLowerCase(),
+let selectedMonth = todayDateTime.format('MMM').toLowerCase(),
 	selectedHour = todayDateTime.format('H'),
 	selectedAnimal = 'fish',
 	selectedHemisphere = userHemisphere,
@@ -116,9 +116,8 @@ const buildTimeDisplay = (start, end) => {
 };
 
 const init = () => {
-	// Set today's date & time
-	$('#js-select-date').attr('data-date', userDate);
-	$('#js-select-date').val(todayDateTime.format('YYYY-MM-D'));
+	// Set today's date & time	
+	$('#js-select-date').val(userDate.toLowerCase());
 	$('#js-select-time').val(userTime);
 
 	// Hide Modal on page load
@@ -138,23 +137,12 @@ const init = () => {
 	});
 
 	$('#js-select-date').change(function() {
-		$('#js-select-date').attr(
-			'data-date',
-			moment($('#js-select-date').val(), 'YYYY-MM-D').format('MMM D')
-		);
-		selectedMonth = moment($('#js-select-date').val(), 'YYYY-MM-D')
-			.format('MMMM')
-			.toLowerCase();
+		selectedMonth = $('#js-select-date').val()		
 		getAnimals(selectedAnimal);
 	});
-
+	
 	$('#js-select-time').change(function() {
-		selectedHour = parseInt(
-			[
-				$(this).val()[0],
-				$(this).val()[1]
-			].join('')
-		);
+		selectedHour = $(this).val()
 		getAnimals(selectedAnimal);
 	});
 
@@ -201,7 +189,7 @@ const getAnimals = (animal) => {
 	if (animal === 'fish') {
 		listFish.forEach((fish) => {
 			fish.months[selectedHemisphere].forEach((month) => {
-				if (month.name === selectedMonth) {
+				if (month.shortName === selectedMonth) {
 					listMonthAnimals.push(fish);
 				}
 			});
@@ -209,7 +197,7 @@ const getAnimals = (animal) => {
 	} else {
 		listBugs.forEach((bug) => {
 			bug.months[selectedHemisphere].forEach((month) => {
-				if (month.name === selectedMonth) {
+				if (month.shortName === selectedMonth) {
 					listMonthAnimals.push(bug);
 				}
 			});
