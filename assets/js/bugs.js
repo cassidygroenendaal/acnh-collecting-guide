@@ -1,7 +1,7 @@
 const listBugs = [
 	{
 		name      : 'agrias butterfly',
-		image     : 'bugs/agriasbutterfly.png',
+		image     : 'bugs/agriasButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -30,7 +30,7 @@ const listBugs = [
 	},
 	{
 		name      : 'atlas moth',
-		image     : 'bugs/atlasmoth.png',
+		image     : 'bugs/atlasMoth.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -215,7 +215,7 @@ const listBugs = [
 	},
 	{
 		name      : 'common butterfly',
-		image     : 'bugs/commonbutterfly.png',
+		image     : 'bugs/commonButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -416,7 +416,7 @@ const listBugs = [
 	},
 	{
 		name      : 'emperor butterfly',
-		image     : 'bugs/emperorbutterfly.png',
+		image     : 'bugs/emperorButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1009,7 +1009,7 @@ const listBugs = [
 	},
 	{
 		name      : 'Madagascan sunset moth',
-		image     : 'bugs/madagascansunsetmoth.png',
+		image     : 'bugs/madagascanSunsetMoth.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1178,7 +1178,7 @@ const listBugs = [
 	},
 	{
 		name      : 'monarch butterfly',
-		image     : 'bugs/monarchbutterfly.png',
+		image     : 'bugs/monarchButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -1300,7 +1300,7 @@ const listBugs = [
 	},
 	{
 		name      : 'paper kite butterfly',
-		image     : 'bugs/paperkitebutterfly.png',
+		image     : 'bugs/paperKiteButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1341,7 +1341,7 @@ const listBugs = [
 	},
 	{
 		name      : 'common bluebottle',
-		image     : 'bugs/commonbluebottle.png',
+		image     : 'bugs/commonBluebottle.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1368,7 +1368,7 @@ const listBugs = [
 	},
 	{
 		name      : 'peacock butterfly',
-		image     : 'bugs/peacockbutterfly.png',
+		image     : 'bugs/peacockButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1393,7 +1393,7 @@ const listBugs = [
 	},
 	{
 		name      : 'great purple emperor',
-		image     : 'bugs/greatpurpleemperor.png',
+		image     : 'bugs/greatPurpleEmperor.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1480,7 +1480,7 @@ const listBugs = [
 	},
 	{
 		name      : 'Queen Alexandra’s birdwing',
-		image     : 'bugs/queenalexandrasbirdwing.png',
+		image     : 'bugs/queenAlexandrasBirdwing.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1507,7 +1507,7 @@ const listBugs = [
 	},
 	{
 		name      : 'Rajah Brooke’s birdwing',
-		image     : 'bugs/rajahbrookesbirdwing.png',
+		image     : 'bugs/rajahBrookesBirdwing.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1812,7 +1812,7 @@ const listBugs = [
 	},
 	{
 		name      : 'tiger butterfly',
-		image     : 'bugs/tigerbutterfly.png',
+		image     : 'bugs/tigerButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -2183,7 +2183,7 @@ const listBugs = [
 	},
 	{
 		name      : 'yellow butterfly',
-		image     : 'bugs/yellowbutterfly.png',
+		image     : 'bugs/yellowButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
