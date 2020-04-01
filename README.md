@@ -1,8 +1,9 @@
-# acnh-collecting-guide
+# Animal Crossing: New Horizons - Fish & Bug Collecting Guide
 
 A fun app made for people to easily look up which animals are available to catch on a given day, and where to find them!
 
-## Future Plans
+Includes images to help identify each animal and sell prices.
 
-Cross Browser compatibility
-* Inputs do not render correctly for many browsers -- this will be addressed in a future update
+## Future Plans
+- Enable site to work offline
+- Enable site to be downloaded as a PWA
