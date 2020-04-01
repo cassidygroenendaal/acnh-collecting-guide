@@ -1,6 +1,6 @@
 const listBugs = [
 	{
-		name      : 'Agris Butterfly',
+		name      : 'agrias butterfly',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -28,7 +28,7 @@ const listBugs = [
 		sellPrice : 3000
 	},
 	{
-		name      : 'Atlas Moth',
+		name      : 'atlas moth',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -56,7 +56,7 @@ const listBugs = [
 		sellPrice : 3000
 	},
 	{
-		name      : 'Ant',
+		name      : 'ant',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -96,7 +96,7 @@ const listBugs = [
 		sellPrice : 80
 	},
 	{
-		name      : 'Bagworm',
+		name      : 'bagworm',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -136,7 +136,7 @@ const listBugs = [
 		sellPrice : 600
 	},
 	{
-		name      : 'Centipede',
+		name      : 'centipede',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -167,12 +167,12 @@ const listBugs = [
 			name        : 'Rocks',
 			sublocation : 'Hit'
 		},
-		startTime : 16,
+		startTime : 17,
 		endTime   : 23,
 		sellPrice : 430
 	},
 	{
-		name      : 'Citrus Long-Horned Beetle',
+		name      : 'citrus long-horned beetle',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -205,14 +205,14 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Trees',
-			sublocation : 'Stump'
+			sublocation : 'Stumps'
 		},
 		startTime : 5,
 		endTime   : 5,
 		sellPrice : 350
 	},
 	{
-		name      : 'Common Butterfly',
+		name      : 'common butterfly',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -240,7 +240,7 @@ const listBugs = [
 			]
 		},
 		location  : {
-			name        : 'Flying',
+			name        : 'Flowers',
 			sublocation : null
 		},
 		startTime : 4,
@@ -248,7 +248,7 @@ const listBugs = [
 		sellPrice : 160
 	},
 	{
-		name      : 'Cricket',
+		name      : 'cricket',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -270,7 +270,7 @@ const listBugs = [
 		sellPrice : 130
 	},
 	{
-		name      : 'Damselfly',
+		name      : 'damselfly',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -294,7 +294,7 @@ const listBugs = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Darner Dragonfly',
+		name      : 'darner dragonfly',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -320,11 +320,29 @@ const listBugs = [
 			sublocation : null
 		},
 		startTime : 8,
-		endTime   : 19,
+		endTime   : 17,
 		sellPrice : 230
 	},
 	{
-		name      : 'Diving Beetle',
+		name      : 'firefly',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+			],
+			southern : [
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Flying',
+			sublocation : 'Near Freshwater'
+		},
+		startTime : 19,
+		endTime   : 4,
+		sellPrice : 60
+	},
+	{
+		name      : 'diving beetle',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -342,15 +360,15 @@ const listBugs = [
 			]
 		},
 		location  : {
-			name        : 'River',
-			sublocation : null
+			name        : 'Water',
+			sublocation : 'Fresh'
 		},
 		startTime : 8,
 		endTime   : 19,
 		sellPrice : 800
 	},
 	{
-		name      : 'Dung Beetle',
+		name      : 'dung beetle',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -365,14 +383,14 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Ground',
-			sublocation : null
+			sublocation : 'Rolling dirt/snow balls'
 		},
 		startTime : 5,
 		endTime   : 5,
-		sellPrice : 2500
+		sellPrice : 3000
 	},
 	{
-		name      : 'Earth-Boring Dung Beetle',
+		name      : 'earth-boring dung beetle',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -394,7 +412,7 @@ const listBugs = [
 		sellPrice : 300
 	},
 	{
-		name      : 'Emperor Butterfly',
+		name      : 'emperor butterfly',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -426,7 +444,297 @@ const listBugs = [
 		sellPrice : 4000
 	},
 	{
-		name      : 'Flea',
+		name      : 'scarab beetle',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 23,
+		endTime   : 8,
+		sellPrice : 10000
+	},
+	{
+		name      : 'drone beetle',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 200
+	},
+	{
+		name      : 'goliath beetle',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 8000
+	},
+	{
+		name      : 'saw stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 2000
+	},
+	{
+		name      : 'miyama stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1000
+	},
+	{
+		name      : 'giant stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 23,
+		endTime   : 8,
+		sellPrice : 10000
+	},
+	{
+		name      : 'rainbow stag',
+		months    : {
+			northern : [
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 19,
+		endTime   : 8,
+		sellPrice : 6000
+	},
+	{
+		name      : 'cyclommatus stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 8000
+	},
+	{
+		name      : 'golden stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 12000
+	},
+	{
+		name      : 'giraffe stag',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 12000
+	},
+	{
+		name      : 'horned dynastid',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 1350
+	},
+	{
+		name      : 'horned atlas',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 8000
+	},
+	{
+		name      : 'horned elephant',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 8000
+	},
+	{
+		name      : 'horned Hercules',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : 'Palm'
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 12000
+	},
+	{
+		name      : 'flea',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -458,7 +766,7 @@ const listBugs = [
 		sellPrice : 70
 	},
 	{
-		name      : 'Fly',
+		name      : 'fly',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -498,7 +806,59 @@ const listBugs = [
 		sellPrice : 60
 	},
 	{
-		name      : 'Grasshopper',
+		name      : 'banded dragonfly',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Flying',
+			sublocation : null
+		},
+		startTime : 8,
+		endTime   : 17,
+		sellPrice : 4500
+	},
+	{
+		name      : 'rice grasshopper',
+		months    : {
+			northern : [
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 }
+			],
+			southern : [
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 }
+			]
+		},
+		location  : {
+			name        : 'Ground',
+			sublocation : null
+		},
+		startTime : 8,
+		endTime   : 19,
+		sellPrice : 160
+	},
+	{
+		name      : 'grasshopper',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -520,7 +880,7 @@ const listBugs = [
 		sellPrice : 160
 	},
 	{
-		name      : 'Hermit Crab',
+		name      : 'hermit crab',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -553,14 +913,14 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Beach',
-			sublocation : null
+			sublocation : 'Disguised as a shell'
 		},
 		startTime : 19,
 		endTime   : 8,
 		sellPrice : 1000
 	},
 	{
-		name      : 'Honeybee',
+		name      : 'honeybee',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -586,7 +946,7 @@ const listBugs = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Ladybug',
+		name      : 'ladybug',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -612,7 +972,7 @@ const listBugs = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Long Locust',
+		name      : 'long locust',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -644,7 +1004,7 @@ const listBugs = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Madagascan Sunset Moth',
+		name      : 'Madagascan sunset moth',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -672,7 +1032,7 @@ const listBugs = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Man-Faced Stink Bug',
+		name      : 'man-faced stink bug',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -704,7 +1064,7 @@ const listBugs = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Mantis',
+		name      : 'mantis',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -738,7 +1098,7 @@ const listBugs = [
 		sellPrice : 430
 	},
 	{
-		name      : 'Migratory Locust',
+		name      : 'migratory locust',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -759,10 +1119,10 @@ const listBugs = [
 		},
 		startTime : 8,
 		endTime   : 19,
-		sellPrice : 200
+		sellPrice : 600
 	},
 	{
-		name      : 'Mole Cricket',
+		name      : 'mole cricket',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -792,7 +1152,27 @@ const listBugs = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Monarch Butterfly',
+		name      : 'bell cricket',
+		months    : {
+			northern : [
+				{ name: 'september', shortName: 'sept', position: 9 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+			],
+			southern : [
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'april', shortName: 'apr', position: 4 },
+			]
+		},
+		location  : {
+			name        : 'Ground',
+			sublocation : null
+		},
+		startTime : 17,
+		endTime   : 8,
+		sellPrice : 430
+	},
+	{
+		name      : 'monarch butterfly',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -814,7 +1194,7 @@ const listBugs = [
 		sellPrice : 140
 	},
 	{
-		name      : 'Mosquito',
+		name      : 'mosquito',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -838,7 +1218,7 @@ const listBugs = [
 		sellPrice : 130
 	},
 	{
-		name      : 'Moth',
+		name      : 'moth',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -878,7 +1258,7 @@ const listBugs = [
 		sellPrice : 130
 	},
 	{
-		name      : 'Orchid Mantis',
+		name      : 'orchid mantis',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -905,14 +1285,14 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Flowers',
-			sublocation : null
+			sublocation : 'White'
 		},
 		startTime : 8,
 		endTime   : 17,
 		sellPrice : 2400
 	},
 	{
-		name      : 'Paper Kite Butterfly',
+		name      : 'paper kite butterfly',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -952,7 +1332,33 @@ const listBugs = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Peacock Butterfly',
+		name      : 'common bluebottle',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Flying',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 19,
+		sellPrice : 300
+	},
+	{
+		name      : 'peacock butterfly',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -976,7 +1382,31 @@ const listBugs = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Pill Bug',
+		name      : 'great purple emperor',
+		months    : {
+			northern : [
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Flying',
+			sublocation : null
+		},
+		startTime : 4,
+		endTime   : 19,
+		sellPrice : 3000
+	},
+	{
+		name      : 'pill bug',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1012,7 +1442,7 @@ const listBugs = [
 		sellPrice : 250
 	},
 	{
-		name      : 'Pondskater',
+		name      : 'pondskater',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1030,15 +1460,15 @@ const listBugs = [
 			]
 		},
 		location  : {
-			name        : 'River',
-			sublocation : null
+			name        : 'Water',
+			sublocation : 'Fresh'
 		},
 		startTime : 8,
 		endTime   : 19,
 		sellPrice : 130
 	},
 	{
-		name      : 'Queen Alexandra’s Birdwing',
+		name      : 'Queen Alexandra’s birdwing',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1064,31 +1494,7 @@ const listBugs = [
 		sellPrice : 4000
 	},
 	{
-		name      : 'Rainbow Stag',
-		months    : {
-			northern : [
-				{ name: 'june', shortName: 'june', position: 6 },
-				{ name: 'july', shortName: 'july', position: 7 },
-				{ name: 'august', shortName: 'aug', position: 8 },
-				{ name: 'september', shortName: 'sept', position: 9 }
-			],
-			southern : [
-				{ name: 'january', shortName: 'jan', position: 1 },
-				{ name: 'february', shortName: 'feb', position: 2 },
-				{ name: 'march', shortName: 'mar', position: 3 },
-				{ name: 'december', shortName: 'dec', position: 12 }
-			]
-		},
-		location  : {
-			name        : 'Trees',
-			sublocation : null
-		},
-		startTime : 19,
-		endTime   : 8,
-		sellPrice : 6000
-	},
-	{
-		name      : 'Rajah Brooke’s Birdwing',
+		name      : 'Rajah Brooke’s birdwing',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1122,7 +1528,7 @@ const listBugs = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Red Dragonfly',
+		name      : 'red dragonfly',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -1142,27 +1548,53 @@ const listBugs = [
 		sellPrice : 180
 	},
 	{
-		name      : 'Rosalia Batsei Beetle',
+		name      : 'Rosalia Batsei beetle',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
-				{ name: 'june', shortName: 'june', position: 6 }
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
 			],
 			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
 				{ name: 'november', shortName: 'nov', position: 11 },
 				{ name: 'december', shortName: 'dec', position: 12 }
 			]
 		},
 		location  : {
 			name        : 'Trees',
-			sublocation : 'Stump'
+			sublocation : 'Stumps'
 		},
 		startTime : 5,
 		endTime   : 5,
 		sellPrice : 3000
 	},
 	{
-		name      : 'Scorpion',
+		name      : 'blue weevil beetle',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 }
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 800
+	},
+	{
+		name      : 'scorpion',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1190,7 +1622,7 @@ const listBugs = [
 		sellPrice : 8000
 	},
 	{
-		name      : 'Snail',
+		name      : 'snail',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1230,7 +1662,7 @@ const listBugs = [
 		sellPrice : 250
 	},
 	{
-		name      : 'Spider',
+		name      : 'spider',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1267,10 +1699,10 @@ const listBugs = [
 		},
 		startTime : 19,
 		endTime   : 8,
-		sellPrice : 600
+		sellPrice : 480
 	},
 	{
-		name      : 'Stinkbug',
+		name      : 'stinkbug',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1302,7 +1734,7 @@ const listBugs = [
 		sellPrice : 120
 	},
 	{
-		name      : 'Tarantula',
+		name      : 'tarantula',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1330,7 +1762,7 @@ const listBugs = [
 		sellPrice : 8000
 	},
 	{
-		name      : 'Tiger Beetle',
+		name      : 'tiger beetle',
 		months    : {
 			northern : [
 				{ name: 'february', shortName: 'feb', position: 2 },
@@ -1361,12 +1793,12 @@ const listBugs = [
 			name        : 'Ground',
 			sublocation : null
 		},
-		startTime : 4,
-		endTime   : 21,
-		sellPrice : 200
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 1500
 	},
 	{
-		name      : 'Tiger Butterfly',
+		name      : 'tiger butterfly',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1396,7 +1828,33 @@ const listBugs = [
 		sellPrice : 240
 	},
 	{
-		name      : 'Violin Beetle',
+		name      : 'jewel beetle',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 2400
+	},
+	{
+		name      : 'violin beetle',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1415,14 +1873,74 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Trees',
-			sublocation : 'Stump'
+			sublocation : null
 		},
 		startTime : 5,
 		endTime   : 5,
 		sellPrice : 450
 	},
 	{
-		name      : 'Walker Cicada',
+		name      : 'brown cicada',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 8,
+		endTime   : 17,
+		sellPrice : 250
+	},
+	{
+		name      : 'robust cicada',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 8,
+		endTime   : 17,
+		sellPrice : 300
+	},
+	{
+		name      : 'giant cicada',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 8,
+		endTime   : 17,
+		sellPrice : 600
+	},
+	{
+		name      : 'walker cicada',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -1442,7 +1960,75 @@ const listBugs = [
 		sellPrice : 400
 	},
 	{
-		name      : 'Walking Leaf',
+		name      : 'evening cicada',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTimes : [4, 16],
+		endTimes   : [8, 19],
+		sellPrice : 660
+	},
+	{
+		name      : 'cicada shell',
+		months    : {
+			northern : [
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+			]
+		},
+		location  : {
+			name        : 'Trees',
+			sublocation : null
+		},
+		startTime : 5,
+		endTime   : 5,
+		sellPrice : 10
+	},
+	{
+		name      : 'giant water bug',
+		months    : {
+			northern : [
+				{ name: 'april', shortName: 'apr', position: 4 },
+				{ name: 'may', shortName: 'may', position: 5 },
+				{ name: 'june', shortName: 'june', position: 6 },
+				{ name: 'july', shortName: 'july', position: 7 },
+				{ name: 'august', shortName: 'aug', position: 8 },
+				{ name: 'september', shortName: 'sept', position: 9 }
+			],
+			southern : [
+				{ name: 'january', shortName: 'jan', position: 1 },
+				{ name: 'february', shortName: 'feb', position: 2 },
+				{ name: 'march', shortName: 'mar', position: 3 },
+				{ name: 'october', shortName: 'oct', position: 10 },
+				{ name: 'november', shortName: 'nov', position: 11 },
+				{ name: 'december', shortName: 'dec', position: 12 }
+			]
+		},
+		location  : {
+			name        : 'Water',
+			sublocation : 'Fresh'
+		},
+		startTime : 19,
+		endTime   : 8,
+		sellPrice : 2000
+	},
+	{
+		name      : 'walking leaf',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1457,14 +2043,14 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Ground',
-			sublocation : null
+			sublocation : 'Under trees'
 		},
 		startTime : 5,
 		endTime   : 5,
 		sellPrice : 600
 	},
 	{
-		name       : 'Walking Stick',
+		name       : 'walking stick',
 		months     : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1496,7 +2082,7 @@ const listBugs = [
 		sellPrice  : 600
 	},
 	{
-		name      : 'Wasp',
+		name      : 'wasp',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1536,7 +2122,7 @@ const listBugs = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Wharf Roach',
+		name      : 'wharf roach',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1576,7 +2162,7 @@ const listBugs = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Yellow Butterfly',
+		name      : 'yellow butterfly',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
