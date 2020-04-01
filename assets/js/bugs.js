@@ -252,6 +252,7 @@ const listBugs = [
 	},
 	{
 		name      : 'cricket',
+		image     : 'bugs/cricket.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -927,6 +928,7 @@ const listBugs = [
 	},
 	{
 		name      : 'honeybee',
+		image     : 'bugs/honeybee.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1073,6 +1075,7 @@ const listBugs = [
 	},
 	{
 		name      : 'mantis',
+		image     : 'bugs/mantis.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1162,6 +1165,7 @@ const listBugs = [
 	},
 	{
 		name      : 'bell cricket',
+		image     : 'bugs/bellCricket.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -1270,6 +1274,7 @@ const listBugs = [
 	},
 	{
 		name      : 'orchid mantis',
+		image     : 'bugs/orchidMantis.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -2107,6 +2112,7 @@ const listBugs = [
 	},
 	{
 		name      : 'wasp',
+		image     : 'bugs/wasp.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
