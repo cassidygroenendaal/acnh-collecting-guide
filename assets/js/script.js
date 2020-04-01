@@ -277,6 +277,7 @@ const renderAnimals = (listAnimals) => {
 		newTitleContainer.append(newTitle, newSubtitle);
 		if (animal.image) {
 			newImage.attr('src', `./assets/images/${animal.image}`);
+			newImage.attr('alt', animal.name);
 			newHeader.append(newImage, newTitleContainer);
 		}
 
