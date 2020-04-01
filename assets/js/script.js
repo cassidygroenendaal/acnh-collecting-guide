@@ -265,7 +265,7 @@ const renderAnimals = (listAnimals) => {
 
 		// Build Card Header
 		let newHeader = $('<div class="card__header">'),
-			newImage = $('<img class="card__icon">'),
+			newImage = $('<img class="card__icon lazy-image">'),
 			newTitleContainer = $('<div class="card__title-container">'),
 			newTitle = $('<p class="card__title">'),
 			newSubtitle = $('<p class="card__subtitle">');
@@ -276,7 +276,7 @@ const renderAnimals = (listAnimals) => {
 		);
 		newTitleContainer.append(newTitle, newSubtitle);
 		if (animal.image) {
-			newImage.attr('src', `./assets/images/${animal.image}`);
+			newImage.attr('data-src', `./assets/images/${animal.image}`);
 			newImage.attr('alt', animal.name);
 			newHeader.append(newImage, newTitleContainer);
 		}
@@ -388,6 +388,8 @@ const renderAnimals = (listAnimals) => {
 
 		$('#js-display-results').append(newCard);
 	});
+
+	initLazyImages();
 };
 
 const updateResultsOverview = (numResults) => {
@@ -406,6 +408,22 @@ const updateResultsOverview = (numResults) => {
 			$('#js-results-location').text(selectedBugLocation);
 		}
 	}
+};
+
+const initLazyImages = () => {
+	const listImages = document.querySelectorAll('.lazy-image');
+	const onIntersection = (images) => {
+		images.forEach((image) => {
+			if (image.isIntersecting) {
+				observer.unobserve(image.target);
+				image.target.src = image.target.dataset.src;
+			}
+		});
+	};
+	const observer = new IntersectionObserver(onIntersection);
+	listImages.forEach((image) => {
+		observer.observe(image);
+	});
 };
 
 //==========================================================================
