@@ -1,0 +1,30 @@
+{
+  "name": "acnh-collecting-guide",
+  "version": "1.0.0",
+  "description": "An application for determining which animals are available to be caught at a given time in the Animal Crossing: New Horizons video game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassidygroenendaal/acnh-collecting-guide.git"
+  },
+  "keywords": [
+    "animal",
+    "crossing",
+    "acnh",
+    "new",
+    "horizons",
+    "bug",
+    "fish",
+    "collecting",
+    "guide"
+  ],
+  "author": "Cassidy Groenendaal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassidygroenendaal/acnh-collecting-guide/issues"
+  },
+  "homepage": "https://github.com/cassidygroenendaal/acnh-collecting-guide#readme"
+}
