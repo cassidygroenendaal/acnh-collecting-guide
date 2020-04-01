@@ -1904,6 +1904,7 @@ const listBugs = [
 	},
 	{
 		name      : 'brown cicada',
+		image     : 'bugs/brownCicada.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1924,6 +1925,7 @@ const listBugs = [
 	},
 	{
 		name      : 'robust cicada',
+		image     : 'bugs/robustCicada.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1944,6 +1946,7 @@ const listBugs = [
 	},
 	{
 		name      : 'giant cicada',
+		image     : 'bugs/giantCicada.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1964,6 +1967,7 @@ const listBugs = [
 	},
 	{
 		name      : 'walker cicada',
+		image     : 'bugs/walkerCicada.png',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -1984,6 +1988,7 @@ const listBugs = [
 	},
 	{
 		name       : 'evening cicada',
+		image     : 'bugs/eveningCicada.png',
 		months     : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2010,6 +2015,7 @@ const listBugs = [
 	},
 	{
 		name      : 'cicada shell',
+		image     : 'bugs/cicadaShell.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
