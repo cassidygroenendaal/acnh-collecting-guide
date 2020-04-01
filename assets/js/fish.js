@@ -515,7 +515,8 @@ const listFish = [
 		sellPrice : 120
 	},
 	{
-		name      : 'Freshwater goby',
+		name      : 'freshwater goby',
+		image     : 'fish/freshwaterGoby.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -555,7 +556,8 @@ const listFish = [
 		sellPrice : 400
 	},
 	{
-		name      : 'Loach',
+		name      : 'loach',
+		image     : 'fish/loach.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -577,7 +579,8 @@ const listFish = [
 		sellPrice : 400
 	},
 	{
-		name      : 'Catfish',
+		name      : 'catfish',
+		image     : 'fish/catfish.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -605,7 +608,8 @@ const listFish = [
 		sellPrice : 800
 	},
 	{
-		name      : 'Giant snakehead',
+		name      : 'giant snakehead',
+		image     : 'fish/giantSnakehead.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -627,7 +631,8 @@ const listFish = [
 		sellPrice : 5500
 	},
 	{
-		name      : 'Bluegill',
+		name      : 'bluegill',
+		image     : 'fish/bluegill.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -667,7 +672,8 @@ const listFish = [
 		sellPrice : 180
 	},
 	{
-		name      : 'Yellow perch',
+		name      : 'yellow perch',
+		image     : 'fish/yellowPerch.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -694,7 +700,8 @@ const listFish = [
 		sellPrice : 300
 	},
 	{
-		name      : 'Black bass',
+		name      : 'black bass',
+		image     : 'fish/blackBass.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -734,7 +741,8 @@ const listFish = [
 		sellPrice : 400
 	},
 	{
-		name      : 'Tilapia',
+		name      : 'tilapia',
+		image     : 'fish/tilapia.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -760,7 +768,8 @@ const listFish = [
 		sellPrice : 800
 	},
 	{
-		name      : 'Pike',
+		name      : 'pike',
+		image     : 'fish/pike.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -784,7 +793,8 @@ const listFish = [
 		sellPrice : 1800
 	},
 	{
-		name      : 'Pond smelt',
+		name      : 'pond smelt',
+		image     : 'fish/pondSmelt.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -806,7 +816,8 @@ const listFish = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Sweetfish',
+		name      : 'sweetfish',
+		image     : 'fish/sweetfish.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -828,7 +839,8 @@ const listFish = [
 		sellPrice : 900
 	},
 	{
-		name      : 'Cherry salmon',
+		name      : 'cherry salmon',
+		image     : 'fish/cherrySalmon.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -858,7 +870,8 @@ const listFish = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Char',
+		name      : 'char',
+		image     : 'fish/char.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -888,7 +901,8 @@ const listFish = [
 		sellPrice : 3800
 	},
 	{
-		name      : 'Golden trout',
+		name      : 'golden trout',
+		image     : 'fish/goldenTrout.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -916,7 +930,8 @@ const listFish = [
 		sellPrice : 15000
 	},
 	{
-		name      : 'Stringfish',
+		name      : 'stringfish',
+		image     : 'fish/stringfish.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -940,7 +955,8 @@ const listFish = [
 		sellPrice : 15000
 	},
 	{
-		name      : 'Salmon',
+		name      : 'salmon',
+		image     : 'fish/salmon.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 }
@@ -958,7 +974,8 @@ const listFish = [
 		sellPrice : 700
 	},
 	{
-		name      : 'King salmon',
+		name      : 'king salmon',
+		image     : 'fish/kingSalmon.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 }
@@ -976,7 +993,8 @@ const listFish = [
 		sellPrice : 1800
 	},
 	{
-		name      : 'Mitten crab',
+		name      : 'mitten crab',
+		image     : 'fish/mittenCrab.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -998,7 +1016,8 @@ const listFish = [
 		sellPrice : 2000
 	},
 	{
-		name      : 'Guppy',
+		name      : 'guppy',
+		image     : 'fish/guppy.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1030,7 +1049,8 @@ const listFish = [
 		sellPrice : 1300
 	},
 	{
-		name      : 'Nibble fish',
+		name      : 'nibble fish',
+		image     : 'fish/nibbleFish.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1056,7 +1076,8 @@ const listFish = [
 		sellPrice : 1500
 	},
 	{
-		name      : 'Angelfish',
+		name      : 'angelfish',
+		image     : 'fish/angelfish.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1084,7 +1105,8 @@ const listFish = [
 		sellPrice : 3000
 	},
 	{
-		name      : 'Betta',
+		name      : 'betta',
+		image     : 'fish/betta.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1112,7 +1134,8 @@ const listFish = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Neon tetra',
+		name      : 'neon tetra',
+		image     : 'fish/neonTetra.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1144,7 +1167,8 @@ const listFish = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Rainbowfish',
+		name      : 'rainbowfish',
+		image     : 'fish/rainbowfish.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1172,7 +1196,8 @@ const listFish = [
 		sellPrice : 800
 	},
 	{
-		name       : 'Piranha',
+		name       : 'piranha',
+		image     : 'fish/piranha.png',
 		months     : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1202,7 +1227,8 @@ const listFish = [
 		sellPrice  : 2500
 	},
 	{
-		name      : 'Arowana',
+		name      : 'arowana',
+		image     : 'fish/arowana.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1226,7 +1252,8 @@ const listFish = [
 		sellPrice : 10000
 	},
 	{
-		name      : 'Dorado',
+		name      : 'dorado',
+		image     : 'fish/dorado.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1250,7 +1277,8 @@ const listFish = [
 		sellPrice : 15000
 	},
 	{
-		name      : 'Gar',
+		name      : 'gar',
+		image     : 'fish/gar.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1274,7 +1302,8 @@ const listFish = [
 		sellPrice : 6000
 	},
 	{
-		name      : 'Arapaima',
+		name      : 'arapaima',
+		image     : 'fish/arapaima.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1298,7 +1327,8 @@ const listFish = [
 		sellPrice : 10000
 	},
 	{
-		name      : 'Saddled Bichir',
+		name      : 'saddled bichir',
+		image     : 'fish/saddledBichir.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1322,7 +1352,8 @@ const listFish = [
 		sellPrice : 4000
 	},
 	{
-		name      : 'Sturgeon',
+		name      : 'sturgeon',
+		image     : 'fish/sturgeon.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1352,7 +1383,8 @@ const listFish = [
 		sellPrice : 10000
 	},
 	{
-		name      : 'Sea butterfly',
+		name      : 'sea butterfly',
+		image     : 'fish/seaButterfly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1376,7 +1408,8 @@ const listFish = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Seahorse',
+		name      : 'seahorse',
+		image     : 'fish/seahorse.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1408,7 +1441,8 @@ const listFish = [
 		sellPrice : 1100
 	},
 	{
-		name      : 'Clownfish',
+		name      : 'clownfish',
+		image     : 'fish/clownfish.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1436,7 +1470,8 @@ const listFish = [
 		sellPrice : 650
 	},
 	{
-		name      : 'Surgeonfish',
+		name      : 'surgeonfish',
+		image     : 'fish/surgeonfish.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1464,7 +1499,8 @@ const listFish = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Butterfly fish',
+		name      : 'butterfly fish',
+		image     : 'fish/butterflyFish.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1492,7 +1528,8 @@ const listFish = [
 		sellPrice : 1000
 	},
 	{
-		name      : 'Napoleonfish',
+		name      : 'napoleonfish',
+		image     : 'fish/napoleonfish.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1512,7 +1549,8 @@ const listFish = [
 		sellPrice : 10000
 	},
 	{
-		name      : 'Zebra Turkeyfish',
+		name      : 'zebra turkeyfish',
+		image     : 'fish/zebraTurkeyfish.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1543,7 +1581,8 @@ const listFish = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Blowfish',
+		name      : 'blowfish',
+		image     : 'fish/blowfish.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1567,7 +1606,8 @@ const listFish = [
 		sellPrice : 5000
 	},
 	{
-		name      : 'Puffer fish',
+		name      : 'puffer fish',
+		image     : 'fish/pufferFish.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1589,7 +1629,8 @@ const listFish = [
 		sellPrice : 250
 	},
 	{
-		name      : 'Anchovy',
+		name      : 'anchovy',
+		image     : 'fish/anchovy.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1629,7 +1670,8 @@ const listFish = [
 		sellPrice : 200
 	},
 	{
-		name      : 'Horse mackerel',
+		name      : 'horse mackerel',
+		image     : 'fish/horseMackerel.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1669,7 +1711,8 @@ const listFish = [
 		sellPrice : 150
 	},
 	{
-		name      : 'Barred Knifejaw',
+		name      : 'barred Knifejaw',
+		image     : 'fish/barredKnifejaw.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1703,7 +1746,8 @@ const listFish = [
 		sellPrice : 5000
 	},
 	{
-		name      : 'Sea bass',
+		name      : 'sea bass',
+		image     : 'fish/seaBass.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1743,7 +1787,8 @@ const listFish = [
 		sellPrice : 400
 	},
 	{
-		name      : 'Red snapper',
+		name      : 'red snapper',
+		image     : 'fish/redSnapper.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1783,7 +1828,8 @@ const listFish = [
 		sellPrice : 3000
 	},
 	{
-		name      : 'Dab',
+		name      : 'dab',
+		image     : 'fish/dab.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1813,7 +1859,8 @@ const listFish = [
 		sellPrice : 300
 	},
 	{
-		name      : 'Olive flounder',
+		name      : 'olive flounder',
+		image     : 'fish/oliveFlounder.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1853,7 +1900,8 @@ const listFish = [
 		sellPrice : 800
 	},
 	{
-		name      : 'Squid',
+		name      : 'squid',
+		image     : 'fish/squid.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1887,7 +1935,8 @@ const listFish = [
 		sellPrice : 500
 	},
 	{
-		name      : 'Moray eel',
+		name      : 'moray eel',
+		image     : 'fish/morayEel.png',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -1909,7 +1958,8 @@ const listFish = [
 		sellPrice : 2000
 	},
 	{
-		name      : 'Ribbon eel',
+		name      : 'ribbon eel',
+		image     : 'fish/ribbonEel.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1935,7 +1985,8 @@ const listFish = [
 		sellPrice : 600
 	},
 	{
-		name      : 'Tuna',
+		name      : 'tuna',
+		image     : 'fish/tuna.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1963,7 +2014,8 @@ const listFish = [
 		sellPrice : 7000
 	},
 	{
-		name      : 'Blue Marlin',
+		name      : 'blue marlin',
+		image     : 'fish/blueMarlin.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1997,7 +2049,8 @@ const listFish = [
 		sellPrice : 10000
 	},
 	{
-		name      : 'Giant trevally',
+		name      : 'giant trevally',
+		image     : 'fish/giantTrevally.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -2023,7 +2076,8 @@ const listFish = [
 		sellPrice : 4500
 	},
 	{
-		name      : 'Mahi-mahi',
+		name      : 'mahi-mahi',
+		image     : 'fish/mahiMahi.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -2051,7 +2105,8 @@ const listFish = [
 		sellPrice : 6000
 	},
 	{
-		name      : 'Ocean sunfish',
+		name      : 'ocean sunfish',
+		image     : 'fish/oceanSunfish.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2073,7 +2128,8 @@ const listFish = [
 		sellPrice : 4000
 	},
 	{
-		name      : 'Ray',
+		name      : 'ray',
+		image     : 'fish/ray.png',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -2097,7 +2153,8 @@ const listFish = [
 		sellPrice : 3000
 	},
 	{
-		name      : 'Saw shark',
+		name      : 'saw shark',
+		image     : 'fish/sawShark.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2121,7 +2178,8 @@ const listFish = [
 		sellPrice : 12000
 	},
 	{
-		name      : 'Hammerhead shark',
+		name      : 'hammerhead shark',
+		image     : 'fish/hammerheadShark.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2145,7 +2203,8 @@ const listFish = [
 		sellPrice : 8000
 	},
 	{
-		name      : 'Great White shark',
+		name      : 'great white shark',
+		image     : 'fish/greatWhiteShark.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2169,7 +2228,8 @@ const listFish = [
 		sellPrice : 15000
 	},
 	{
-		name      : 'Whale shark',
+		name      : 'whale shark',
+		image     : 'fish/whaleShark.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2193,7 +2253,8 @@ const listFish = [
 		sellPrice : 13000
 	},
 	{
-		name      : 'Suckerfish',
+		name      : 'suckerfish',
+		image     : 'fish/suckerfish.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2217,7 +2278,8 @@ const listFish = [
 		sellPrice : 1500
 	},
 	{
-		name      : 'Football Fish',
+		name      : 'football fish',
+		image     : 'fish/footballFish.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2243,7 +2305,8 @@ const listFish = [
 		sellPrice : 2500
 	},
 	{
-		name      : 'Oarfish',
+		name      : 'oarfish',
+		image     : 'fish/oarfish.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2271,7 +2334,8 @@ const listFish = [
 		sellPrice : 9000
 	},
 	{
-		name      : 'Barreleye',
+		name      : 'barreleye',
+		image     : 'fish/barreleye.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2311,7 +2375,8 @@ const listFish = [
 		sellPrice : 15000
 	},
 	{
-		name      : 'Coelacanth',
+		name      : 'coelacanth',
+		image     : 'fish/coelacanth.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
