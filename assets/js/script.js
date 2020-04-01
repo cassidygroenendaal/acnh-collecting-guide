@@ -265,6 +265,7 @@ const renderAnimals = (listAnimals) => {
 
 		// Build Card Header
 		let newHeader = $('<div class="card__header">'),
+			newImage = $('<img>'),
 			newTitle = $('<p class="card__title">'),
 			newSubtitle = $('<p class="card__subtitle">');
 
@@ -272,8 +273,11 @@ const renderAnimals = (listAnimals) => {
 		newSubtitle.text(
 			buildMonthDisplay(animal.months[selectedHemisphere])
 		);
-		newHeader.append(newTitle);
-		newHeader.append(newSubtitle);
+		if (animal.image) {
+			newImage.attr('src', `./assets/images/${animal.image}`);
+			newHeader.prepend(newImage);
+		}
+		newHeader.append(newTitle, newSubtitle);
 
 		// Build Card Details
 		let newDetails = $('<div class="card__details">'),
