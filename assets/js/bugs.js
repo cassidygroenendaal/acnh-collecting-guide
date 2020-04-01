@@ -59,6 +59,7 @@ const listBugs = [
 	},
 	{
 		name      : 'ant',
+		image     : 'bugs/ant.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -99,6 +100,7 @@ const listBugs = [
 	},
 	{
 		name      : 'bagworm',
+		image     : 'bugs/bagworm.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -139,6 +141,7 @@ const listBugs = [
 	},
 	{
 		name      : 'centipede',
+		image     : 'bugs/centipede.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -761,6 +764,7 @@ const listBugs = [
 	},
 	{
 		name      : 'flea',
+		image     : 'bugs/flea.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -793,6 +797,7 @@ const listBugs = [
 	},
 	{
 		name      : 'fly',
+		image     : 'bugs/fly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -910,6 +915,7 @@ const listBugs = [
 	},
 	{
 		name      : 'hermit crab',
+		image     : 'bugs/hermitCrab.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1234,6 +1240,7 @@ const listBugs = [
 	},
 	{
 		name      : 'mosquito',
+		image     : 'bugs/mosquito.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1452,6 +1459,7 @@ const listBugs = [
 	},
 	{
 		name      : 'pill bug',
+		image     : 'bugs/pillBug.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1646,6 +1654,7 @@ const listBugs = [
 	},
 	{
 		name      : 'scorpion',
+		image     : 'bugs/scorpion.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1674,6 +1683,7 @@ const listBugs = [
 	},
 	{
 		name      : 'snail',
+		image     : 'bugs/snail.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1714,6 +1724,7 @@ const listBugs = [
 	},
 	{
 		name      : 'spider',
+		image     : 'bugs/spider.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1787,6 +1798,7 @@ const listBugs = [
 	},
 	{
 		name      : 'tarantula',
+		image     : 'bugs/tarantula.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2098,6 +2110,7 @@ const listBugs = [
 	},
 	{
 		name      : 'walking leaf',
+		image     : 'bugs/walkingLeaf.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2120,6 +2133,7 @@ const listBugs = [
 	},
 	{
 		name       : 'walking stick',
+		image     : 'bugs/walkingStick.png',
 		months     : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2193,6 +2207,7 @@ const listBugs = [
 	},
 	{
 		name      : 'wharf roach',
+		image     : 'bugs/wharfRoach.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
