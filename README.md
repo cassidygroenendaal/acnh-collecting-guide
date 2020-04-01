@@ -7,3 +7,4 @@ Includes images to help identify each animal and sell prices.
 ## Future Plans
 - Enable site to work offline
 - Enable site to be downloaded as a PWA
+- Add contact page for users to submit change requests
