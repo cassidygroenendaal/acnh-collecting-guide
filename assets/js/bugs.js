@@ -275,6 +275,7 @@ const listBugs = [
 	},
 	{
 		name      : 'damselfly',
+		image     : 'bugs/damselfly.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -299,6 +300,7 @@ const listBugs = [
 	},
 	{
 		name      : 'darner dragonfly',
+		image     : 'bugs/darnerDragonfly.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -329,6 +331,7 @@ const listBugs = [
 	},
 	{
 		name      : 'firefly',
+		image     : 'bugs/firefly.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 }
@@ -812,6 +815,7 @@ const listBugs = [
 	},
 	{
 		name      : 'banded dragonfly',
+		image     : 'bugs/bandedDragonfly.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1135,6 +1139,7 @@ const listBugs = [
 	},
 	{
 		name      : 'mole cricket',
+		image     : 'bugs/moleCricket.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1463,6 +1468,7 @@ const listBugs = [
 	},
 	{
 		name      : 'pondskater',
+		image     : 'bugs/pondskater.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1551,6 +1557,7 @@ const listBugs = [
 	},
 	{
 		name      : 'red dragonfly',
+		image     : 'bugs/redDragonfly.png',
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
