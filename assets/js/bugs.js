@@ -839,6 +839,7 @@ const listBugs = [
 	},
 	{
 		name      : 'rice grasshopper',
+		image     : 'bugs/riceGrasshopper.png',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -863,6 +864,7 @@ const listBugs = [
 	},
 	{
 		name      : 'grasshopper',
+		image     : 'bugs/grasshopper.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -977,6 +979,7 @@ const listBugs = [
 	},
 	{
 		name      : 'long locust',
+		image     : 'bugs/longLocust.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1104,6 +1107,7 @@ const listBugs = [
 	},
 	{
 		name      : 'migratory locust',
+		image     : 'bugs/migratoryLocust.png',
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
