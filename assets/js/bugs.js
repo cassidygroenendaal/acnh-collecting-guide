@@ -175,6 +175,7 @@ const listBugs = [
 	},
 	{
 		name      : 'citrus long-horned beetle',
+		image     : 'bugs/citrusLonghornedBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -350,6 +351,7 @@ const listBugs = [
 	},
 	{
 		name      : 'diving beetle',
+		image     : 'bugs/divingBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -376,6 +378,7 @@ const listBugs = [
 	},
 	{
 		name      : 'dung beetle',
+		image     : 'bugs/dungBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -398,6 +401,7 @@ const listBugs = [
 	},
 	{
 		name      : 'earth-boring dung beetle',
+		image     : 'bugs/earthboringDungBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -453,6 +457,7 @@ const listBugs = [
 	},
 	{
 		name      : 'scarab beetle',
+		image     : 'bugs/scarabBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -473,6 +478,7 @@ const listBugs = [
 	},
 	{
 		name      : 'drone beetle',
+		image     : 'bugs/droneBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -495,6 +501,7 @@ const listBugs = [
 	},
 	{
 		name      : 'goliath beetle',
+		image     : 'bugs/goliathBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -519,6 +526,7 @@ const listBugs = [
 	},
 	{
 		name      : 'saw stag',
+		image     : 'bugs/sawStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -539,6 +547,7 @@ const listBugs = [
 	},
 	{
 		name      : 'miyama stag',
+		image     : 'bugs/miyamaStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -559,6 +568,7 @@ const listBugs = [
 	},
 	{
 		name      : 'giant stag',
+		image     : 'bugs/giantStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -579,6 +589,7 @@ const listBugs = [
 	},
 	{
 		name      : 'rainbow stag',
+		image     : 'bugs/rainbowStag.png',
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -603,6 +614,7 @@ const listBugs = [
 	},
 	{
 		name      : 'cyclommatus stag',
+		image     : 'bugs/cyclommatusStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -623,6 +635,7 @@ const listBugs = [
 	},
 	{
 		name      : 'golden stag',
+		image     : 'bugs/goldenStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -643,6 +656,7 @@ const listBugs = [
 	},
 	{
 		name      : 'giraffe stag',
+		image     : 'bugs/giraffeStag.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -663,6 +677,7 @@ const listBugs = [
 	},
 	{
 		name      : 'horned dynastid',
+		image     : 'bugs/hornedDynastid.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -683,6 +698,7 @@ const listBugs = [
 	},
 	{
 		name      : 'horned atlas',
+		image     : 'bugs/hornedAtlas.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -703,6 +719,7 @@ const listBugs = [
 	},
 	{
 		name      : 'horned elephant',
+		image     : 'bugs/hornedElephant.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -723,6 +740,7 @@ const listBugs = [
 	},
 	{
 		name      : 'horned Hercules',
+		image     : 'bugs/hornedHercules.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -959,6 +977,7 @@ const listBugs = [
 	},
 	{
 		name      : 'ladybug',
+		image     : 'bugs/ladybug.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1047,6 +1066,7 @@ const listBugs = [
 	},
 	{
 		name      : 'man-faced stink bug',
+		image     : 'bugs/manfacedStinkBug.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1578,6 +1598,7 @@ const listBugs = [
 	},
 	{
 		name      : 'Rosalia Batsei beetle',
+		image     : 'bugs/rosaliaBatesiBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1604,6 +1625,7 @@ const listBugs = [
 	},
 	{
 		name      : 'blue weevil beetle',
+		image     : 'bugs/blueWeevilBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1732,6 +1754,7 @@ const listBugs = [
 	},
 	{
 		name      : 'stinkbug',
+		image     : 'bugs/stinkbug.png',
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1792,6 +1815,7 @@ const listBugs = [
 	},
 	{
 		name      : 'tiger beetle',
+		image     : 'bugs/tigerBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'february', shortName: 'feb', position: 2 },
@@ -1859,6 +1883,7 @@ const listBugs = [
 	},
 	{
 		name      : 'jewel beetle',
+		image     : 'bugs/jewelBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1885,6 +1910,7 @@ const listBugs = [
 	},
 	{
 		name      : 'violin beetle',
+		image     : 'bugs/violinBeetle.png',
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -2043,6 +2069,7 @@ const listBugs = [
 	},
 	{
 		name      : 'giant water bug',
+		image     : 'bugs/giantWaterBug.png',
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
