@@ -46,20 +46,14 @@ select::-ms-expand {
 }
 
 /* All Selects/Inputs */
-/* .main-info__date,
-.main-info__time, */
 .main-info__select {
 	position: relative;
 }
 
-/* .main-info__date:hover .main-info__icon,
-.main-info__time:hover .main-info__icon, */
 .main-info__select:hover .main-info__icon {
 	color: #29694a;
 }
 
-/* .main-info__date input,
-.main-info__time input, */
 .main-info__select select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -88,44 +82,6 @@ select::-ms-expand {
 	color: #5fb18a;
 	pointer-events: none;
 }
-
-/* Date Select */
-/* .main-info__date input {
-	position: relative;
-	height: 1.7em;
-	width: 4.6em;
-	top: 0.5em;
-} */
-
-/* .main-info__date input::-webkit-datetime-edit,
-.main-info__date input::-webkit-inner-spin-button,
-.main-info__date input::-webkit-clear-button {
-	display: none;
-} */
-
-/* .main-info__date input::-webkit-calendar-picker-indicator {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	right: 0;
-	opacity: 0;
-} */
-
-/* .main-info__date input::before {
-	position: absolute;
-	content: attr(data-date);
-	color: #55341e;
-} */
-
-/* Time Select */
-/* .main-info__time input::-webkit-inner-spin-button,
-.main-info__time input::-webkit-clear-button {
-	display: none;
-} */
-
-/* .main-info__time .main-info__icon {
-	font-size: 0.7em;
-} */
 
 /* ----------------- Results Overview ----------------- */
 .results-overview {
@@ -173,6 +129,11 @@ select::-ms-expand {
 	border-bottom: 0.1em solid rgba(232, 232, 232, 1);
 	padding-bottom: 1.4em;
 	margin-bottom: 1.4em;
+}
+
+.card__icon {
+	height: 4em;
+	width: 4em;
 }
 
 .card__title {
@@ -358,6 +319,14 @@ footer {
 		margin: 0 auto;
 	}
 
+	.card__header {
+		display: flex;
+	}
+
+	.card__title-container {
+		margin-left: 1.5em;
+	}
+
 	.card__details {
 		display: flex;
 		justify-content: space-between;
@@ -381,9 +350,9 @@ footer {
 	}
 }
 
-@media screen and (min-width: 72em) {
+@media screen and (min-width: 76em) {
 	.container {
-		width: 68em;
+		width: 74em;
 	}
 
 	.main-info {
@@ -414,6 +383,6 @@ footer {
 	}
 
 	.card__details {
-		width: 33.5em;
+		min-width: 33.5em;
 	}
 }
