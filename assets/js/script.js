@@ -275,8 +275,9 @@ const renderAnimals = (listAnimals) => {
 			buildMonthDisplay(animal.months[selectedHemisphere])
 		);
 		newTitleContainer.append(newTitle, newSubtitle);
-		if (animal.image) {
-			newImage.attr('data-src', `./assets/images/${animal.image}`);
+		if (animal.images) {
+			newImage.attr('src', `./assets/images/${animal.images.lqip}`);
+			newImage.attr('data-src', `./assets/images/${animal.images.url}`);
 			newImage.attr('alt', animal.name);
 			newHeader.append(newImage, newTitleContainer);
 		}
