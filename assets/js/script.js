@@ -275,12 +275,14 @@ const renderAnimals = (listAnimals) => {
 			buildMonthDisplay(animal.months[selectedHemisphere])
 		);
 		newTitleContainer.append(newTitle, newSubtitle);
-		if (animal.images) {
-			newImage.attr('src', `./assets/images/${animal.images.lqip}`);
-			newImage.attr('data-src', `./assets/images/${animal.images.url}`);
-			newImage.attr('alt', animal.name);
-			newHeader.append(newImage, newTitleContainer);
+		if (selectedAnimal === 'fish') {
+			newImage.attr('src', `./assets/images/fish/fish_lqip.png`);
+		} else {
+			newImage.attr('src', `./assets/images/bugs/bugs_lqip.png`);
 		}
+		newImage.attr('data-src', `./assets/images/${animal.image}`);
+		newImage.attr('alt', animal.name);
+		newHeader.append(newImage, newTitleContainer);
 
 		// Build Card Details
 		let newDetails = $('<div class="card__details">'),

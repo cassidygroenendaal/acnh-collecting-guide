@@ -1,10 +1,7 @@
 const listFish = [
 	{
 		name      : 'bitterling',
-		images     : {
-			url: 'fish/bitterling.png',
-			lqip: 'fish/bitterling_lqip.png',
-		},
+		image: 'fish/bitterling.png',
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -32,10 +29,6 @@ const listFish = [
 	{
 		name      : 'pale chub',
 		image     : 'fish/paleChub.png',
-		images     : {
-			url: 'fish/paleChub.png',
-			lqip: 'fish/paleChub_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -77,10 +70,6 @@ const listFish = [
 	{
 		name      : 'crucian carp',
 		image     : 'fish/crucianCarp.png',
-		images     : {
-			url: 'fish/crucianCarp.png',
-			lqip: 'fish/crucianCarp_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -122,10 +111,6 @@ const listFish = [
 	{
 		name      : 'dace',
 		image     : 'fish/dace.png',
-		images     : {
-			url: 'fish/dace.png',
-			lqip: 'fish/dace_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -167,10 +152,6 @@ const listFish = [
 	{
 		name      : 'carp',
 		image     : 'fish/carp.png',
-		images     : {
-			url: 'fish/carp.png',
-			lqip: 'fish/carp_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -212,10 +193,6 @@ const listFish = [
 	{
 		name      : 'koi',
 		image     : 'fish/koi.png',
-		images     : {
-			url: 'fish/koi.png',
-			lqip: 'fish/koi_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -257,10 +234,6 @@ const listFish = [
 	{
 		name      : 'goldfish',
 		image     : 'fish/goldfish.png',
-		images     : {
-			url: 'fish/goldfish.png',
-			lqip: 'fish/goldfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -302,10 +275,6 @@ const listFish = [
 	{
 		name      : 'pop-eyed goldfish',
 		image     : 'fish/popeyedGoldfish.png',
-		images     : {
-			url: 'fish/popeyedGoldfish.png',
-			lqip: 'fish/popeyedGoldfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -347,10 +316,6 @@ const listFish = [
 	{
 		name      : 'ranchu goldfish',
 		image     : 'fish/ranchuGoldfish.png',
-		images     : {
-			url: 'fish/ranchuGoldfish.png',
-			lqip: 'fish/ranchuGoldfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -392,10 +357,6 @@ const listFish = [
 	{
 		name      : 'killifish',
 		image     : 'fish/killifish.png',
-		images     : {
-			url: 'fish/killifish.png',
-			lqip: 'fish/killifish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -456,10 +417,6 @@ const listFish = [
 	{
 		name      : 'soft-shelled turtle',
 		image     : 'fish/softshelledTurtle.png',
-		images     : {
-			url: 'fish/softshelledTurtle.png',
-			lqip: 'fish/softshelledTurtle_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -481,10 +438,6 @@ const listFish = [
 	{
 		name      : 'snapping turtle',
 		image     : 'fish/snappingTurtle.png',
-		images     : {
-			url: 'fish/snappingTurtle.png',
-			lqip: 'fish/snappingTurtle_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -516,10 +469,6 @@ const listFish = [
 	{
 		name      : 'tadpole',
 		image     : 'fish/tadpole.png',
-		images     : {
-			url: 'fish/tadpole.png',
-			lqip: 'fish/tadpole_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -547,10 +496,6 @@ const listFish = [
 	{
 		name      : 'frog',
 		image     : 'fish/frog.png',
-		images     : {
-			url: 'fish/frog.png',
-			lqip: 'fish/frog_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -576,10 +521,6 @@ const listFish = [
 	{
 		name      : 'freshwater goby',
 		image     : 'fish/freshwaterGoby.png',
-		images     : {
-			url: 'fish/freshwaterGoby.png',
-			lqip: 'fish/freshwaterGoby_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -621,10 +562,6 @@ const listFish = [
 	{
 		name      : 'loach',
 		image     : 'fish/loach.png',
-		images     : {
-			url: 'fish/loach.png',
-			lqip: 'fish/loach_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -648,10 +585,6 @@ const listFish = [
 	{
 		name      : 'catfish',
 		image     : 'fish/catfish.png',
-		images     : {
-			url: 'fish/catfish.png',
-			lqip: 'fish/catfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -681,10 +614,6 @@ const listFish = [
 	{
 		name      : 'giant snakehead',
 		image     : 'fish/giantSnakehead.png',
-		images     : {
-			url: 'fish/giantSnakehead.png',
-			lqip: 'fish/giantSnakehead_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -708,10 +637,6 @@ const listFish = [
 	{
 		name      : 'bluegill',
 		image     : 'fish/bluegill.png',
-		images     : {
-			url: 'fish/bluegill.png',
-			lqip: 'fish/bluegill_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -753,10 +678,6 @@ const listFish = [
 	{
 		name      : 'yellow perch',
 		image     : 'fish/yellowPerch.png',
-		images     : {
-			url: 'fish/yellowPerch.png',
-			lqip: 'fish/yellowPerch_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -785,10 +706,6 @@ const listFish = [
 	{
 		name      : 'black bass',
 		image     : 'fish/blackBass.png',
-		images     : {
-			url: 'fish/blackBass.png',
-			lqip: 'fish/blackBass_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -830,10 +747,6 @@ const listFish = [
 	{
 		name      : 'tilapia',
 		image     : 'fish/tilapia.png',
-		images     : {
-			url: 'fish/tilapia.png',
-			lqip: 'fish/tilapia_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -861,10 +774,6 @@ const listFish = [
 	{
 		name      : 'pike',
 		image     : 'fish/pike.png',
-		images     : {
-			url: 'fish/pike.png',
-			lqip: 'fish/pike_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -890,10 +799,6 @@ const listFish = [
 	{
 		name      : 'pond smelt',
 		image     : 'fish/pondSmelt.png',
-		images     : {
-			url: 'fish/pondSmelt.png',
-			lqip: 'fish/pondSmelt_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -917,10 +822,6 @@ const listFish = [
 	{
 		name      : 'sweetfish',
 		image     : 'fish/sweetfish.png',
-		images     : {
-			url: 'fish/sweetfish.png',
-			lqip: 'fish/sweetfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -944,10 +845,6 @@ const listFish = [
 	{
 		name      : 'cherry salmon',
 		image     : 'fish/cherrySalmon.png',
-		images     : {
-			url: 'fish/cherrySalmon.png',
-			lqip: 'fish/cherrySalmon_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -979,10 +876,6 @@ const listFish = [
 	{
 		name      : 'char',
 		image     : 'fish/char.png',
-		images     : {
-			url: 'fish/char.png',
-			lqip: 'fish/char_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1014,10 +907,6 @@ const listFish = [
 	{
 		name      : 'golden trout',
 		image     : 'fish/goldenTrout.png',
-		images     : {
-			url: 'fish/goldenTrout.png',
-			lqip: 'fish/goldenTrout_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1047,10 +936,6 @@ const listFish = [
 	{
 		name      : 'stringfish',
 		image     : 'fish/stringfish.png',
-		images     : {
-			url: 'fish/stringfish.png',
-			lqip: 'fish/stringfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1076,10 +961,6 @@ const listFish = [
 	{
 		name      : 'salmon',
 		image     : 'fish/salmon.png',
-		images     : {
-			url: 'fish/salmon.png',
-			lqip: 'fish/salmon_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 }
@@ -1099,10 +980,6 @@ const listFish = [
 	{
 		name      : 'king salmon',
 		image     : 'fish/kingSalmon.png',
-		images     : {
-			url: 'fish/kingSalmon.png',
-			lqip: 'fish/kingSalmon_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 }
@@ -1122,10 +999,6 @@ const listFish = [
 	{
 		name      : 'mitten crab',
 		image     : 'fish/mittenCrab.png',
-		images     : {
-			url: 'fish/mittenCrab.png',
-			lqip: 'fish/mittenCrab_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'september', shortName: 'sept', position: 9 },
@@ -1149,10 +1022,6 @@ const listFish = [
 	{
 		name      : 'guppy',
 		image     : 'fish/guppy.png',
-		images     : {
-			url: 'fish/guppy.png',
-			lqip: 'fish/guppy_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1186,10 +1055,6 @@ const listFish = [
 	{
 		name      : 'nibble fish',
 		image     : 'fish/nibbleFish.png',
-		images     : {
-			url: 'fish/nibbleFish.png',
-			lqip: 'fish/nibbleFish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1217,10 +1082,6 @@ const listFish = [
 	{
 		name      : 'angelfish',
 		image     : 'fish/angelfish.png',
-		images     : {
-			url: 'fish/angelfish.png',
-			lqip: 'fish/angelfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1250,10 +1111,6 @@ const listFish = [
 	{
 		name      : 'betta',
 		image     : 'fish/betta.png',
-		images     : {
-			url: 'fish/betta.png',
-			lqip: 'fish/betta_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1283,10 +1140,6 @@ const listFish = [
 	{
 		name      : 'neon tetra',
 		image     : 'fish/neonTetra.png',
-		images     : {
-			url: 'fish/neonTetra.png',
-			lqip: 'fish/neonTetra_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1320,10 +1173,6 @@ const listFish = [
 	{
 		name      : 'rainbowfish',
 		image     : 'fish/rainbowfish.png',
-		images     : {
-			url: 'fish/rainbowfish.png',
-			lqip: 'fish/rainbowfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -1353,10 +1202,6 @@ const listFish = [
 	{
 		name       : 'piranha',
 		image     : 'fish/piranha.png',
-		images     : {
-			url: 'fish/piranha.png',
-			lqip: 'fish/piranha_lqip.png',
-		},
 		months     : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1388,10 +1233,6 @@ const listFish = [
 	{
 		name      : 'arowana',
 		image     : 'fish/arowana.png',
-		images     : {
-			url: 'fish/arowana.png',
-			lqip: 'fish/arowana_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1417,10 +1258,6 @@ const listFish = [
 	{
 		name      : 'dorado',
 		image     : 'fish/dorado.png',
-		images     : {
-			url: 'fish/dorado.png',
-			lqip: 'fish/dorado_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1446,10 +1283,6 @@ const listFish = [
 	{
 		name      : 'gar',
 		image     : 'fish/gar.png',
-		images     : {
-			url: 'fish/gar.png',
-			lqip: 'fish/gar_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1475,10 +1308,6 @@ const listFish = [
 	{
 		name      : 'arapaima',
 		image     : 'fish/arapaima.png',
-		images     : {
-			url: 'fish/arapaima.png',
-			lqip: 'fish/arapaima_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1504,10 +1333,6 @@ const listFish = [
 	{
 		name      : 'saddled bichir',
 		image     : 'fish/saddledBichir.png',
-		images     : {
-			url: 'fish/saddledBichir.png',
-			lqip: 'fish/saddledBichir_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -1533,10 +1358,6 @@ const listFish = [
 	{
 		name      : 'sturgeon',
 		image     : 'fish/sturgeon.png',
-		images     : {
-			url: 'fish/sturgeon.png',
-			lqip: 'fish/sturgeon_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1568,10 +1389,6 @@ const listFish = [
 	{
 		name      : 'sea butterfly',
 		image     : 'fish/seaButterfly.png',
-		images     : {
-			url: 'fish/seaButterfly.png',
-			lqip: 'fish/seaButterfly_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1597,10 +1414,6 @@ const listFish = [
 	{
 		name      : 'sea horse',
 		image     : 'fish/seaHorse.png',
-		images     : {
-			url: 'fish/seaHorse.png',
-			lqip: 'fish/seaHorse_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1634,10 +1447,6 @@ const listFish = [
 	{
 		name      : 'clownfish',
 		image     : 'fish/clownfish.png',
-		images     : {
-			url: 'fish/clownfish.png',
-			lqip: 'fish/clownfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1667,10 +1476,6 @@ const listFish = [
 	{
 		name      : 'surgeonfish',
 		image     : 'fish/surgeonfish.png',
-		images     : {
-			url: 'fish/surgeonfish.png',
-			lqip: 'fish/surgeonfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1700,10 +1505,6 @@ const listFish = [
 	{
 		name      : 'butterfly fish',
 		image     : 'fish/butterflyFish.png',
-		images     : {
-			url: 'fish/butterflyFish.png',
-			lqip: 'fish/butterflyFish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1733,10 +1534,6 @@ const listFish = [
 	{
 		name      : 'napoleonfish',
 		image     : 'fish/napoleonfish.png',
-		images     : {
-			url: 'fish/napoleonfish.png',
-			lqip: 'fish/napoleonfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1758,10 +1555,6 @@ const listFish = [
 	{
 		name      : 'zebra turkeyfish',
 		image     : 'fish/zebraTurkeyfish.png',
-		images     : {
-			url: 'fish/zebraTurkeyfish.png',
-			lqip: 'fish/zebraTurkeyfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'april', shortName: 'apr', position: 4 },
@@ -1794,10 +1587,6 @@ const listFish = [
 	{
 		name      : 'blowfish',
 		image     : 'fish/blowfish.png',
-		images     : {
-			url: 'fish/blowfish.png',
-			lqip: 'fish/blowfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1823,10 +1612,6 @@ const listFish = [
 	{
 		name      : 'puffer fish',
 		image     : 'fish/pufferFish.png',
-		images     : {
-			url: 'fish/pufferFish.png',
-			lqip: 'fish/pufferFish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -1850,10 +1635,6 @@ const listFish = [
 	{
 		name      : 'anchovy',
 		image     : 'fish/anchovy.png',
-		images     : {
-			url: 'fish/anchovy.png',
-			lqip: 'fish/anchovy_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1895,10 +1676,6 @@ const listFish = [
 	{
 		name      : 'horse mackerel',
 		image     : 'fish/horseMackerel.png',
-		images     : {
-			url: 'fish/horseMackerel.png',
-			lqip: 'fish/horseMackerel_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -1940,10 +1717,6 @@ const listFish = [
 	{
 		name      : 'barred Knifejaw',
 		image     : 'fish/barredKnifejaw.png',
-		images     : {
-			url: 'fish/barredKnifejaw.png',
-			lqip: 'fish/barredKnifejaw_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'march', shortName: 'mar', position: 3 },
@@ -1979,10 +1752,6 @@ const listFish = [
 	{
 		name      : 'sea bass',
 		image     : 'fish/seaBass.png',
-		images     : {
-			url: 'fish/seaBass.png',
-			lqip: 'fish/seaBass_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2024,10 +1793,6 @@ const listFish = [
 	{
 		name      : 'red snapper',
 		image     : 'fish/redSnapper.png',
-		images     : {
-			url: 'fish/redSnapper.png',
-			lqip: 'fish/redSnapper_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2069,10 +1834,6 @@ const listFish = [
 	{
 		name      : 'dab',
 		image     : 'fish/dab.png',
-		images     : {
-			url: 'fish/dab.png',
-			lqip: 'fish/dab_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2104,10 +1865,6 @@ const listFish = [
 	{
 		name      : 'olive flounder',
 		image     : 'fish/oliveFlounder.png',
-		images     : {
-			url: 'fish/oliveFlounder.png',
-			lqip: 'fish/oliveFlounder_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2149,10 +1906,6 @@ const listFish = [
 	{
 		name      : 'squid',
 		image     : 'fish/squid.png',
-		images     : {
-			url: 'fish/squid.png',
-			lqip: 'fish/squid_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2188,10 +1941,6 @@ const listFish = [
 	{
 		name      : 'moray eel',
 		image     : 'fish/morayEel.png',
-		images     : {
-			url: 'fish/morayEel.png',
-			lqip: 'fish/morayEel_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -2215,10 +1964,6 @@ const listFish = [
 	{
 		name      : 'ribbon eel',
 		image     : 'fish/ribbonEel.png',
-		images     : {
-			url: 'fish/ribbonEel.png',
-			lqip: 'fish/ribbonEel_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2246,10 +1991,6 @@ const listFish = [
 	{
 		name      : 'tuna',
 		image     : 'fish/tuna.png',
-		images     : {
-			url: 'fish/tuna.png',
-			lqip: 'fish/tuna_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2279,10 +2020,6 @@ const listFish = [
 	{
 		name      : 'blue marlin',
 		image     : 'fish/blueMarlin.png',
-		images     : {
-			url: 'fish/blueMarlin.png',
-			lqip: 'fish/blueMarlin_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2318,10 +2055,6 @@ const listFish = [
 	{
 		name      : 'giant trevally',
 		image     : 'fish/giantTrevally.png',
-		images     : {
-			url: 'fish/giantTrevally.png',
-			lqip: 'fish/giantTrevally_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -2349,10 +2082,6 @@ const listFish = [
 	{
 		name      : 'mahi-mahi',
 		image     : 'fish/mahiMahi.png',
-		images     : {
-			url: 'fish/mahiMahi.png',
-			lqip: 'fish/mahiMahi_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'may', shortName: 'may', position: 5 },
@@ -2382,10 +2111,6 @@ const listFish = [
 	{
 		name      : 'ocean sunfish',
 		image     : 'fish/oceanSunfish.png',
-		images     : {
-			url: 'fish/oceanSunfish.png',
-			lqip: 'fish/oceanSunfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2409,10 +2134,6 @@ const listFish = [
 	{
 		name      : 'ray',
 		image     : 'fish/ray.png',
-		images     : {
-			url: 'fish/ray.png',
-			lqip: 'fish/ray_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'august', shortName: 'aug', position: 8 },
@@ -2438,10 +2159,6 @@ const listFish = [
 	{
 		name      : 'saw shark',
 		image     : 'fish/sawShark.png',
-		images     : {
-			url: 'fish/sawShark.png',
-			lqip: 'fish/sawShark_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2467,10 +2184,6 @@ const listFish = [
 	{
 		name      : 'hammerhead shark',
 		image     : 'fish/hammerheadShark.png',
-		images     : {
-			url: 'fish/hammerheadShark.png',
-			lqip: 'fish/hammerheadShark_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2496,10 +2209,6 @@ const listFish = [
 	{
 		name      : 'great white shark',
 		image     : 'fish/greatWhiteShark.png',
-		images     : {
-			url: 'fish/greatWhiteShark.png',
-			lqip: 'fish/greatWhiteShark_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2525,10 +2234,6 @@ const listFish = [
 	{
 		name      : 'whale shark',
 		image     : 'fish/whaleShark.png',
-		images     : {
-			url: 'fish/whaleShark.png',
-			lqip: 'fish/whaleShark_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2554,10 +2259,6 @@ const listFish = [
 	{
 		name      : 'suckerfish',
 		image     : 'fish/suckerfish.png',
-		images     : {
-			url: 'fish/suckerfish.png',
-			lqip: 'fish/suckerfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'june', shortName: 'june', position: 6 },
@@ -2583,10 +2284,6 @@ const listFish = [
 	{
 		name      : 'football fish',
 		image     : 'fish/footballFish.png',
-		images     : {
-			url: 'fish/footballFish.png',
-			lqip: 'fish/footballFish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2614,10 +2311,6 @@ const listFish = [
 	{
 		name      : 'oarfish',
 		image     : 'fish/oarfish.png',
-		images     : {
-			url: 'fish/oarfish.png',
-			lqip: 'fish/oarfish_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2647,10 +2340,6 @@ const listFish = [
 	{
 		name      : 'barreleye',
 		image     : 'fish/barreleye.png',
-		images     : {
-			url: 'fish/barreleye.png',
-			lqip: 'fish/barreleye_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
@@ -2692,10 +2381,6 @@ const listFish = [
 	{
 		name      : 'coelacanth',
 		image     : 'fish/coelacanth.png',
-		images     : {
-			url: 'fish/coelacanth.png',
-			lqip: 'fish/coelacanth_lqip.png',
-		},
 		months    : {
 			northern : [
 				{ name: 'january', shortName: 'jan', position: 1 },
