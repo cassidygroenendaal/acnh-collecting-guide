@@ -51,7 +51,7 @@ const compareTimes = (start, end) => {
 	return false;
 };
 
-const buildMonthDisplay = (months) => {
+const buildMonthDisplay = months => {
 	if (months.length === 12) {
 		return 'All Year';
 	} else {
@@ -116,6 +116,18 @@ const buildTimeDisplay = (start, end) => {
 };
 
 const init = () => {
+	// Register service worker
+	if ('serviceWorker' in navigator) {
+		window.addEventListener('load', function() {
+			navigator.serviceWorker
+				.register('/serviceWorker.js')
+				.then(res => console.log('Service worker registered.'))
+				.catch(err =>
+					console.log('Service worker not registered.', err)
+				);
+		});
+	}
+
 	// Set today's date & time
 	$('#js-select-date').val(userDate.toLowerCase());
 	$('#js-select-time').val(userTime);
@@ -182,21 +194,21 @@ const init = () => {
 	getAnimals(selectedAnimal);
 };
 
-const getAnimals = (animal) => {
+const getAnimals = animal => {
 	let listMonthAnimals = [];
 
 	// Compile a list of animals for the current month
 	if (animal === 'fish') {
-		listFish.forEach((fish) => {
-			fish.months[selectedHemisphere].forEach((month) => {
+		listFish.forEach(fish => {
+			fish.months[selectedHemisphere].forEach(month => {
 				if (month.shortName === selectedMonth) {
 					listMonthAnimals.push(fish);
 				}
 			});
 		});
 	} else {
-		listBugs.forEach((bug) => {
-			bug.months[selectedHemisphere].forEach((month) => {
+		listBugs.forEach(bug => {
+			bug.months[selectedHemisphere].forEach(month => {
 				if (month.shortName === selectedMonth) {
 					listMonthAnimals.push(bug);
 				}
@@ -204,7 +216,7 @@ const getAnimals = (animal) => {
 		});
 	}
 
-	let listTimeAnimals = listMonthAnimals.filter((animal) => {
+	let listTimeAnimals = listMonthAnimals.filter(animal => {
 		if (animal.startTimes) {
 			return (
 				compareTimes(animal.startTimes[0], animal.endTimes[0]) ||
@@ -226,7 +238,7 @@ const getAnimals = (animal) => {
 			listSelectedFish = listTimeAnimals;
 		} else {
 			listSelectedFish = listTimeAnimals.filter(
-				(fish) => fish.location.name === selectedFishLocation
+				fish => fish.location.name === selectedFishLocation
 			);
 		}
 		updateResultsOverview(listSelectedFish.length);
@@ -244,7 +256,7 @@ const getAnimals = (animal) => {
 			listSelectedBugs = listTimeAnimals;
 		} else {
 			listSelectedBugs = listTimeAnimals.filter(
-				(bug) => bug.location.name === selectedBugLocation
+				bug => bug.location.name === selectedBugLocation
 			);
 		}
 		updateResultsOverview(listSelectedBugs.length);
@@ -258,9 +270,9 @@ const getAnimals = (animal) => {
 	}
 };
 
-const renderAnimals = (listAnimals) => {
+const renderAnimals = listAnimals => {
 	$('#js-display-results').empty();
-	listAnimals.forEach((animal) => {
+	listAnimals.forEach(animal => {
 		let newCard = $('<div class="card">');
 
 		// Build Card Header
@@ -395,7 +407,7 @@ const renderAnimals = (listAnimals) => {
 	initLazyImages();
 };
 
-const updateResultsOverview = (numResults) => {
+const updateResultsOverview = numResults => {
 	$('#js-results-num').text(numResults);
 	$('#js-results-hemisphere').text(selectedHemisphere.toTitleCase());
 	if (selectedAnimal === 'fish') {
@@ -415,8 +427,8 @@ const updateResultsOverview = (numResults) => {
 
 const initLazyImages = () => {
 	const listImages = document.querySelectorAll('.lazy-image');
-	const onIntersection = (images) => {
-		images.forEach((image) => {
+	const onIntersection = images => {
+		images.forEach(image => {
 			if (image.isIntersecting) {
 				observer.unobserve(image.target);
 				image.target.src = image.target.dataset.src;
@@ -424,7 +436,7 @@ const initLazyImages = () => {
 		});
 	};
 	const observer = new IntersectionObserver(onIntersection);
-	listImages.forEach((image) => {
+	listImages.forEach(image => {
 		observer.observe(image);
 	});
 };
@@ -439,7 +451,7 @@ if (localStorage.getItem('hemisphere') !== null) {
 	init();
 } else {
 	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition((position) => {
+		navigator.geolocation.getCurrentPosition(position => {
 			userHemisphere =
 				position.coords.latitude >= 0 ? 'northern' : 'southern';
 			localStorage.setItem(

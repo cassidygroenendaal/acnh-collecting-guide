@@ -337,9 +337,7 @@ const listBugs = [
 		name      : 'firefly',
 		image     : 'bugs/firefly.png',
 		months    : {
-			northern : [
-				{ name: 'june', shortName: 'june', position: 6 }
-			],
+			northern : [ { name: 'june', shortName: 'june', position: 6 } ],
 			southern : [
 				{ name: 'december', shortName: 'dec', position: 12 }
 			]
@@ -1914,7 +1912,7 @@ const listBugs = [
 		},
 		location  : {
 			name        : 'Trees',
-			sublocation : null
+			sublocation : 'Stumps'
 		},
 		startTime : 5,
 		endTime   : 5,
@@ -2033,7 +2031,7 @@ const listBugs = [
 	},
 	{
 		name       : 'evening cicada',
-		image     : 'bugs/eveningCicada.png',
+		image      : 'bugs/eveningCicada.png',
 		months     : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2048,14 +2046,8 @@ const listBugs = [
 			name        : 'Trees',
 			sublocation : null
 		},
-		startTimes : [
-			4,
-			16
-		],
-		endTimes   : [
-			8,
-			19
-		],
+		startTimes : [ 4, 16 ],
+		endTimes   : [ 8, 19 ],
 		sellPrice  : 660
 	},
 	{
@@ -2133,7 +2125,7 @@ const listBugs = [
 	},
 	{
 		name       : 'walking stick',
-		image     : 'bugs/walkingStick.png',
+		image      : 'bugs/walkingStick.png',
 		months     : {
 			northern : [
 				{ name: 'july', shortName: 'july', position: 7 },
@@ -2154,14 +2146,8 @@ const listBugs = [
 			name        : 'Trees',
 			sublocation : null
 		},
-		startTimes : [
-			4,
-			17
-		],
-		endTimes   : [
-			8,
-			19
-		],
+		startTimes : [ 4, 17 ],
+		endTimes   : [ 8, 19 ],
 		sellPrice  : 600
 	},
 	{
