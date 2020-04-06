@@ -21,8 +21,13 @@ body {
 }
 
 .logo {
-	display: block;
-	margin: 1.5em auto;
+	display: flex;
+	justify-content: center;
+	margin: 1.6em 0;
+}
+
+.logo__image {
+	height: 6em;
 }
 
 .hidden {
@@ -180,7 +185,7 @@ select::-ms-expand {
 .detail__info {
 	font-weight: 700;
 	font-size: 1.2em;
-	color: #fffae3;
+	color: #fff;
 	background-color: pink;
 	padding: 0.8em 1em;
 	border-radius: 3em;
@@ -319,6 +324,11 @@ footer {
 		margin: 0 auto;
 	}
 
+	.logo__image {
+		height: 7.5em;
+	}
+
+
 	.card__header {
 		display: flex;
 	}
@@ -353,6 +363,10 @@ footer {
 @media screen and (min-width: 76em) {
 	.container {
 		width: 74em;
+	}
+
+	.logo__image {
+		height: 9em;
 	}
 
 	.main-info {

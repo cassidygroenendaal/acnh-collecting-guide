@@ -171,7 +171,7 @@ const assets = [
 	'/assets/js/bugs.min.js',
 	'/assets/js/fish.min.js',
 	'/assets/js/script.min.js',
-	'/assets/images/acnh_logo.png',
+	'/assets/images/acnh_logo@2x.png',
 	'/assets/images/leaf-print.png',
 	...bugImages,
 	...fishImages
