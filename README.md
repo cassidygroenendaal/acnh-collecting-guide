@@ -6,6 +6,4 @@ Includes images to help identify each animal and sell prices.
 
 ## Future Plans
 - Add fish shadow sizes
-- Enable site to work offline
-- Enable site to be downloaded as a PWA
 - Add contact page for users to submit change requests
