@@ -430,6 +430,11 @@ const initLazyImages = () => {
 	const onIntersection = images => {
 		images.forEach(image => {
 			if (image.isIntersecting) {
+				if (navigator.onLine) {
+					console.log('Online:', true);
+				} else {
+					console.log('Online:', false);
+				}
 				observer.unobserve(image.target);
 				image.target.src = image.target.dataset.src;
 			}
